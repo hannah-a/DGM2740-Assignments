@@ -1,0 +1,12 @@
+@media only screen and (min-width: 1028px) {
+main figure {
+    width: 25%;
+}
+div {
+    clear: both;
+    column-count: 3;
+    column-rule: 2px dashed pink;
+}
+
+
+}
