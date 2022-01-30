@@ -7,11 +7,12 @@ body {
     font-family: $defaultFont;
     font-size: 16px;
 }
+//restricting to a max of 1200px
 header, nav, main, footer {
     max-width: 75rem;
     margin: auto;
 }
-#headWrapper {
+#headWrapper { //header background color with border
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 100%);
     border-bottom: 5px solid $primaryColor;
@@ -20,26 +21,26 @@ header {
 display: flex;
 color: white;
 letter-spacing: .1rem;
-img {
+img { //logo sizing
     height: 100%;
     width: auto;
 }  
 h1 {
     font-size: $h1size;
     font-weight: 700;
-    padding-top: 2.7rem;
+    padding-top: 2.7rem; //changes the padding to center vertically without slogan
 } 
 h2 {
-    display: none;
+    display: none; //disspears on small screens
     font-style: italic;
     padding-top: .5rem;
 }
 
 }
-.navWrapper {
+.navWrapper { //adds border that matches header border
     border-bottom: 5px solid $primaryColor;
 }
-nav {
+nav { //small veritcal navigation
     ul {
         li{
             padding: 1rem;
@@ -54,13 +55,13 @@ nav {
                 display: block;
             }
         }
-        li.active {
+        li.active { //wayfinding for current page
             background: $secondaryColor;
             a {
                 color: white;
             }
         }
-        li:hover {
+        li:hover { //wayfinding
             background: $secondaryColor;
             a {
                 color: white;
@@ -69,25 +70,23 @@ nav {
     }
 }
 
-#mainWrapper {
+#mainWrapper { //background for main page
     background: black;
-    
 }
 
 main {
     background: white;
-    padding-bottom: 6rem;
+    padding-bottom: 6rem; //adding space to bottom of text and figure
     h1 {
         background: $primaryColor;
         padding: 2rem 1rem;
         font-size: $h2size; 
         color: white;
-        position: relative;
+        position: relative; //moving the page title up over the image slightly
         bottom: 20px;
     }
-    figure {
+    figure { //scaling figure and image of nucleus
         float: right;
-        clear: both;
         width: 100%;
         height: auto;
         padding: 1rem;
@@ -102,9 +101,9 @@ main {
     }
     p {
         padding: 0 1rem;
-        line-height: 1.3rem;
+        line-height: 1.3rem; //making text more readable
     }
-    img {
+    img { //hero image scaling
         width: 100%;
         height: auto;
     }
@@ -116,5 +115,4 @@ footer {
     padding: 2rem;
     color: white;
     text-align: center;
-    position: relative;
 }

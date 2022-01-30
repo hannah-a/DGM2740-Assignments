@@ -1,15 +1,14 @@
-header h2 {
+header h2 { //slogan reappears at medium
     display: block;
 }
 
 
 header {
-    h1 {
+    h1 { //changed the padding to fit slogan
         padding-top: 2rem;
     }
 }
-nav {
-    
+nav { //medium navigation into horizontal bar
     ul {
         display: flex;
         justify-content: space-between;
