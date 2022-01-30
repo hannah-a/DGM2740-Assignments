@@ -5,6 +5,7 @@
 @media only screen and (min-width: 35rem) {
     @import "medium";
 }
+//import only when the screen is larger than 1024px
 @media only screen and (min-width: 64rem) {
     @import "large";
 }

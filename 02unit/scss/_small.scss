@@ -1,0 +1,11 @@
+// Prevents font sizes changes when in orientation mode
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+// Apply box-sizing to all elements
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+body {
+    font-family: $defaultFont;
+}
+header, nav, main, footer {
+    max-width: 75rem;
+}
