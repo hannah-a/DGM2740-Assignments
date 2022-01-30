@@ -1,57 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Google Karla Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Link to style sheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Science Musuem: Programs</title>
-</head>
-<body>
-    <div id="headWrapper"> <!--Header div for background color-->
-        <header>
-            <img src="/02unit/images/sciencelogo100.png">
-            <h1>Science Museum</h1>
-            <h2>Teaching the Way Forward</h2>
-        </header>
+  </head>
+  <body>
+    <div id="headWrapper">
+      <!--Header div for background color-->
+      <header>
+        <img src="/02unit/images/sciencelogo100.png" />
+        <div class="logosub">
+          <!--Wrapper for logo and subphrase-->
+          <h1>Science Museum</h1>
+          <h2>Teaching the Way Forward</h2>
+        </div>
+      </header>
     </div>
-    <div class="navWrapper"> <!--Nav div for background color-->
-        <nav>
-            <ul>
-                <li>Exhibits</li>
-                <li>Research</li>
-                <li class="active">Programs</li>
-                <li>Visit Us</li>
-            </ul>
-        </nav>
+    <div class="navWrapper">
+      <!--Nav div for background color-->
+      <nav>
+        <ul>
+          <li><a href="#">Exhibits</a></li>
+          <li><a href="#">Research</a></li>
+          <li class="active"><a href="#">Programs</a></li>
+          <li><a href="#">Visit Us</a></li>
+        </ul>
+      </nav>
     </div>
     <div id="mainWrapper">
-    <main>
+      <main>
         <!--Hero image-->
-        <img sizes="(min-width: 1024px) 1024px, 100vw" srcset="/02unit/images/smallscience.jpg 320w, /02unit/images/mediumscience.jpg 560w, /02unit/images/largescience.jpg 1024w" alt="Math and science jumbled." src="images/largescience.jpg">
+        <img class="heroImg"
+          sizes= "100vw"
+          srcset="
+            /02unit/images/smallscience.jpg   320w,
+            /02unit/images/mediumscience.jpg  560w,
+            /02unit/images/largescience.jpg  1024w
+          "
+          alt="Math and science jumbled."
+          src="images/largescience.jpg"
+        />
         <h1>Programs</h1>
-        <figure> <!--Scaling and floating image-->
-            <img src="images/nucleus.png" alt="Atom nucleus">
-            <figcaption>The nucleus of an atom.</figcaption>
+        <figure>
+          <!--Scaling and floating image-->
+          <img src="images/nucleus.png" alt="Atom nucleus" />
+          <figcaption>The nucleus of an atom.</figcaption>
         </figure>
         <!--Space Lorem Ipsum-->
-        <p>There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation many never come again. But why, some say, the moon? Why choose this as our goal? And they may well ask why climb the highest mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play Texas?<br>
-        We choose to go to the moon. We cho ose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too. <br>
-        It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.<br>
-        In the last 24 hours we have seen facilities now being created for the greatest and most complex exploration in man's history. We have felt the ground shake and the air shattered by the testing of a Saturn C-1 booster rocket, many times as powerful as the Atlas which launched John Glenn, generating power equivalent to 10,000 automobiles with their accelerators on the floor. We have seen the site where the F-1 rocket engines, each one as powerful as all eight engines of the Saturn combined, will be clustered together to make the advanced Saturn missile, assembled in a new building to be built at Cape Canaveral as tall as a 48 story structure, as wide as a city block, and as long as two lengths of this field.</p>
-    </main>
+        <p>
+          There is no strife, no prejudice, no national conflict in outer space
+          as yet. Its hazards are hostile to us all. Its conquest deserves the
+          best of all mankind, and its opportunity for peaceful cooperation many
+          never come again. But why, some say, the moon? Why choose this as our
+          goal? And they may well ask why climb the highest mountain? Why, 35
+          years ago, fly the Atlantic? Why does Rice play Texas?
+        </p>
+        <br/>
+        <p>
+          We choose to go to the moon. We cho ose to go to the moon in this
+          decade and do the other things, not because they are easy, but because
+          they are hard, because that goal will serve to organize and measure
+          the best of our energies and skills, because that challenge is one
+          that we are willing to accept, one we are unwilling to postpone, and
+          one which we intend to win, and the others, too. <br />
+          It is for these reasons that I regard the decision last year to shift
+          our efforts in space from low to high gear as among the most important
+          decisions that will be made during my incumbency in the office of the
+          Presidency.
+        </p>
+        <br />
+
+        <p>
+          In the last 24 hours we have seen facilities now being created for the
+          greatest and most complex exploration in man's history. We have felt
+          the ground shake and the air shattered by the testing of a Saturn C-1
+          booster rocket, many times as powerful as the Atlas which launched
+          John Glenn, generating power equivalent to 10,000 automobiles with
+          their accelerators on the floor. We have seen the site where the F-1
+          rocket engines, each one as powerful as all eight engines of the
+          Saturn combined, will be clustered together to make the advanced
+          Saturn missile, assembled in a new building to be built at Cape
+          Canaveral as tall as a 48 story structure, as wide as a city block,
+          and as long as two lengths of this field.
+        </p>
+      </main>
     </div>
-    <div id="footer"> <!--Footer Div for background color-->
-    <footer>
-        <p> &copy; 2021 by Hannah Armstrong for Educational Purposes</p>
-    </footer>
+    <div id="footerWrapper">
+      <!--Footer Div for background color-->
+      <footer>
+        <p>&copy; 2021 by Hannah Armstrong for Educational Purposes</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

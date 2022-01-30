@@ -5,7 +5,116 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 body {
     font-family: $defaultFont;
+    font-size: 16px;
 }
 header, nav, main, footer {
     max-width: 75rem;
+    margin: auto;
+}
+#headWrapper {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 100%);
+    border-bottom: 5px solid $primaryColor;
+} 
+header {
+display: flex;
+color: white;
+letter-spacing: .1rem;
+img {
+    height: 100%;
+    width: auto;
+}  
+h1 {
+    font-size: $h1size;
+    font-weight: 700;
+    padding-top: 2.7rem;
+} 
+h2 {
+    display: none;
+    font-style: italic;
+    padding-top: .5rem;
+}
+
+}
+.navWrapper {
+    border-bottom: 5px solid $primaryColor;
+}
+nav {
+    ul {
+        li{
+            padding: 1rem;
+            border: 5px solid;
+            border-image-slice: 1;
+            border-image-source: 
+            linear-gradient(to bottom, $primaryColor, black); //border only for small screens
+            font-weight: 700;
+            a { //resetting links
+                text-decoration: none;
+                color: black;
+                display: block;
+            }
+        }
+        li.active {
+            background: $secondaryColor;
+            a {
+                color: white;
+            }
+        }
+        li:hover {
+            background: $secondaryColor;
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+#mainWrapper {
+    background: black;
+    
+}
+
+main {
+    background: white;
+    padding-bottom: 6rem;
+    h1 {
+        background: $primaryColor;
+        padding: 2rem 1rem;
+        font-size: $h2size; 
+        color: white;
+        position: relative;
+        bottom: 20px;
+    }
+    figure {
+        float: right;
+        clear: both;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        img {
+           width: 100%;
+        }
+        figcaption {
+            padding: 1rem;
+            text-align: center;
+            font-style: italic;
+        }
+    }
+    p {
+        padding: 0 1rem;
+        line-height: 1.3rem;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+#footerWrapper {
+    background: $primaryColor;
+}
+footer {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
 }
