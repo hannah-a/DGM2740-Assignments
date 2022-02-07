@@ -7,4 +7,25 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
+header, nav, main, footer {
+    max-width: 71.25rem;
+    margin: auto;
+}
+header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    font-family: $bodyFont;
+}
+main {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        figure {
+            width: 300px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
