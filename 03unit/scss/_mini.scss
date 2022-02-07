@@ -1,0 +1,96 @@
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    font-family: 'Mukta', sans-serif;
+}
+header, nav, main, footer {
+    max-width: 71.25rem;
+    margin: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    font-family: $bodyFont;
+    padding: 1rem;
+    div {
+        flex-basis: 50%;
+        margin: auto;
+        h1 {
+            font-size: 1.3rem;
+        }
+        h2{
+            font-family: $bodyFont;
+            font-weight: 300;
+            margin-top: .5rem;
+            font-size: .8rem;
+
+        }
+    }
+}
+
+nav {
+    ul {
+        margin-top: 1.3rem;
+        background: lighten($primaryColor, 20%);
+        li {
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 1rem 1rem;
+            width: 100%;
+        
+        }
+        li:hover {
+            background: darken($primaryColor, 10%);
+            color: rgb(255, 228, 228);
+        }
+        li.active {
+            background: darken($primaryColor, 10%);
+            color: rgb(255, 228, 228);
+        }
+    }
+}
+
+main {
+    padding: 0 1rem;
+    h1 {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    div {
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        figure {
+            margin: 1rem 1rem 1rem 0;
+            flex-basis: 80vw;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+            figcaption {
+                margin-top: .5rem;
+                padding: .5rem;
+                line-height: 1.5rem;
+                background: linear-gradient(0deg, rgba(255,255,255,0.9337641357027464) 1%, rgba(195,34,34,0.25686591276252024) 100%);
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+footer {
+    background: rgb(0, 168, 0);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+
+}

@@ -1,0 +1,25 @@
+header {
+    div { 
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+}
+nav { 
+    ul {
+        li {
+        flex-basis: 22vw;
+        }
+    }
+}    
+main {
+    div {
+        display: flex;
+        figure {
+            flex-basis: 20vw;
+        }
+    }
+}

@@ -1,31 +1,25 @@
-* {
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-header, nav, main, footer {
-    max-width: 71.25rem;
-    margin: auto;
-}
+
 header {
-    display: grid;
-    grid-template-columns: 100px auto;
-    font-family: $bodyFont;
+    div {
+        flex-basis: 50%;
+        margin: auto 1.5rem;
+        h1 {
+            font-size: 2rem;
+        }
+        h2{
+            font-family: $bodyFont;
+            font-weight: 300;
+            margin-top: .5rem;
+            font-size: 1rem;
+
+        }
+    }
 }
+
 main {
     div {
-        display: flex;
-        flex-wrap: wrap;
         figure {
-            width: 300px;
-            img{
-                width: 100%;
-                height: auto;
-            }
+            flex-basis: 42.2vw;
         }
     }
 }
