@@ -21,3 +21,15 @@ header {
     font-family: 'Shizuru', cursive;
 }
 
+button {
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    transition: background-color 3s ease-in, width 3s ease-in;
+}
+button:hover {
+    background-color: yellow;
+    color: red;
+    width: 100px;
+}
