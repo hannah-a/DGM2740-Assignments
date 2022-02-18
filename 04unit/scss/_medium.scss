@@ -1,0 +1,15 @@
+
+div.headerWrapper {
+    background-image: url(../images/header-medium.jpg);
+    height: 300px;
+}
+header {
+    h1{
+        font-size: clamp(2rem, 7vw, 6vw); 
+        width: 25%;
+    }
+    p {
+        padding-top: 1.5%;
+        font-size: 1rem;
+    }
+}

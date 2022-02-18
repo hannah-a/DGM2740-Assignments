@@ -2,6 +2,7 @@
    -moz-box-sizing: border-box;
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
+   margin: 0;
 }
 html {
     -webkit-text-size-adjust: 100%;
@@ -11,15 +12,52 @@ html {
 header, nav, main, footer {
     max-width: 960px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 body {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Garamond', serif;
+    font-size: 100%;
 }
 
-header {
-    font-family: 'Shizuru', cursive;
+.headerWrapper {
+    background-image: url(../images/header-small.jpg);
+    height: 175px;
+    background-position: center;
+    background-size: cover;
 }
+.headerBar {
+    background-color: black;
+    height: 10vh;
+    position: relative;
+    top: 20vh;
+}
+header {
+        font-family: 'Shizuru', cursive;
+        color: white;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 4vh;
+        
+        h1{
+            font-size: clamp(1.6rem, 10vw, 5vw); 
+            width: 30%;
+            line-height: 120%;
+            margin-bottom: 2%;
+        }
+        p {
+            border-top: 2px solid grey;
+            width: fit-content;
+            font-size: .8rem;
+            font-family: 'Garamond';
+            font-weight: 200;
+            color: rgb(185, 185, 185);
+            padding-top: 2%;
+        }
+    }
+
 
 button {
     background-color: red;
