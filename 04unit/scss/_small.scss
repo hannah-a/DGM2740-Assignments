@@ -8,7 +8,7 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
+//sets max width of content
 header, nav, main, footer {
     max-width: 960px;
     margin: 0 auto;
@@ -20,54 +20,243 @@ body {
     font-size: 100%;
 }
 
+
+// HEADER 
+
+//allows full page image
 .headerWrapper {
     background-image: url(../images/header-small.jpg);
     height: 175px;
     background-position: center;
     background-size: cover;
 }
-.headerBar {
-    background-color: black;
-    height: 10vh;
-    position: relative;
-    top: 20vh;
-}
+
 header {
         font-family: 'Shizuru', cursive;
-        color: white;
         display: flex;
-        height: 100%;
         flex-direction: column;
         justify-content: center;
-        padding-top: 4vh;
-        
+        height: 100%; //name and slogan take up full height of header
+        padding-top: 4vh; //pushed down from top
         h1{
             font-size: clamp(1.6rem, 10vw, 5vw); 
-            width: 30%;
-            line-height: 120%;
-            margin-bottom: 2%;
+            letter-spacing: .1rem;
+            width: 30%; //forces h1 words to wrap 
+            line-height: $headerLineheight;
+            margin-bottom: 2%; //adds space before line
+            color: $headerColor;
         }
         p {
-            border-top: 2px solid grey;
+            border-top: 2px solid darken($sloganColor, 20%);
             width: fit-content;
             font-size: .8rem;
-            font-family: 'Garamond';
+            font-family: 'Garamond', serif;
             font-weight: 200;
-            color: rgb(185, 185, 185);
-            padding-top: 2%;
+            color: $sloganColor;
+            padding-top: 2%; //equal to margin-bottom on h1
         }
     }
 
+// NAVIGATION
 
-button {
-    background-color: red;
-    color: white;
-    width: 50px;
-    height: 50px;
-    transition: background-color 3s ease-in, width 3s ease-in;
+
+.navWrapper {
+    background-color: black;
 }
-button:hover {
-    background-color: yellow;
-    color: red;
-    width: 100px;
+nav {
+    padding: 1rem 0; //since nav can't have side padding so that the anchor colors will stretch full width.
 }
+ul {
+    display: none; //initially not displayed until class .open is applied
+    list-style-type: none;
+    a {
+        color: $headerColor;
+        display: block;
+        text-decoration: none;
+        font-family: 'Garamond', serif;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        padding: 1rem;
+    }
+    li:hover {
+        background-color: darken($headerColor, 70%);
+    }
+}
+ul.open {
+    display: block; //contents of ul will display
+}
+
+
+//For the hamburger menu
+.button {
+    background-color: $headerColor;
+    border-radius: 5%;
+    border: none;
+    color: black;
+    height: 40px;
+    width: 40px;
+    padding: .5rem;
+    margin: 0 0 1rem 1rem; //nav already has padding on top and bottom of 1rem
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    #line1 { //hamburger icon lines
+        background-color: black;
+        border-radius: 30%;
+        width: 25px;
+        height: 2px; 
+        transition: transform .5s ease-in-out;
+    }
+    #line2 {//hamburger icon lines
+        background-color: black;
+        border-radius: 30%;
+        width: 25px;
+        height: 2px;
+    }
+    #line3 {//hamburger icon lines
+        background-color: black;
+        border-radius: 30%;
+        width: 25px;
+        height: 2px;
+        transition: transform .5s ease-in-out;
+    }
+}
+
+.button:hover {
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(165, 165, 165, 0.877) 100%);
+}
+
+.closed { //hamburger transforms into exit symbol 
+    transition: transform 1s;
+    #line1 {
+        position: relative;
+        top: 11px;
+        transform: rotateZ(45deg);
+    }
+    #line2 {
+        display: none;
+        background-color:rgb(255, 255, 255);
+    }
+    #line3 {
+       position: relative;
+       bottom: 11.5px;
+       transform: rotateZ(-45deg);
+    }
+}
+
+
+// MAIN 
+.mainWrapper {
+    background: rgb(234,242,235);
+    background: linear-gradient(0deg, rgba(234,242,235,1) 0%, rgba(128,132,128,1) 100%);
+}
+main {
+    background-color: white;
+}
+
+//row of icons below navigation
+.icons {
+    display: flex;
+    justify-content: space-around;
+    div {
+        padding: .5rem;
+        img {
+        width: 50px;
+        height: auto;
+        }
+    }
+    .icon {
+        animation-name: popup;
+        animation-duration: 3s;
+    }
+    @keyframes popup {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    }
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+        .card {
+            background-color: $sloganColor;
+            border-radius: 10px;
+            flex-basis: 100%;
+            width: 300px;
+            height: 300px;
+            margin: 1rem;
+            position: relative;
+            z-index: 1;
+            h2, p, a {
+                background-color: rgba(0,0,0,.8);
+                padding: 1rem;
+                position: relative;
+                top: 9vh;
+                color: white;
+            }
+            img {
+                width: 100%;
+                height: auto; 
+                
+            }
+            h2 {
+                font-family: 'Shizuru', cursive;
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            a {
+                background-color: black;
+                font-weight: 600;
+                transition: background-color 1s;
+                padding: .5rem;
+                border-radius: 0 5px 5px 0;
+            }
+
+        }
+        .card:nth-child(1) {
+                background-image: url(/04unit/images/lake.jpg);
+                background-position: center;
+                background-size: stretch;
+                background-repeat: no-repeat;
+            }
+        .card:nth-child(2) {
+                background-image: url(/04unit/images/beach.jpg);
+                background-position: center top;
+                background-size: stretch;
+                background-repeat: no-repeat;
+        }
+        .card:nth-child(3) {
+            background-image: url(/04unit/images/forest.jpg);
+            background-position: center top;
+            background-size: stretch;
+            background-repeat: no-repeat;
+        }
+    }
+
+.card:hover {
+    a {
+        background-color: rgb(0, 61, 0);
+    }
+}
+.footerWrapper {
+    background-color: black;
+}
+footer {
+    color: grey;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color:rgb(0, 61, 0);
+    }
+}
+

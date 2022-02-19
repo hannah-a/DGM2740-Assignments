@@ -5,11 +5,17 @@ div.headerWrapper {
 }
 header {
     h1{
-        font-size: clamp(2rem, 7vw, 6vw); 
+        font-size: clamp(2rem, 7vw, 4vw); 
         width: 25%;
     }
     p {
         padding-top: 1.5%;
-        font-size: 1rem;
+        font-size: .9rem;
     }
 }
+.card-group {
+        .card {
+            flex-basis: 43.5%;
+        }
+}
+

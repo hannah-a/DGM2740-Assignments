@@ -5,10 +5,27 @@ div.headerWrapper {
 header {
     padding-top: 10vh;
     h1{
-        font-size: 3.8rem; 
+        font-size: 3rem; 
         width: 10%;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
+}
+
+nav, ul, ul.open{
+    display: block;
+}
+ul { //makes nav items a row
+    display: flex;
+    justify-content: flex-end;
+}
+.button, .closed {
+    display: none;
+}
+
+.card-group {
+        .card {
+            flex-basis: 29%;
+        }
 }
