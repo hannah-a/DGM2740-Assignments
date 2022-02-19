@@ -389,43 +389,40 @@ main {
 .card-group .card:nth-child(1) {
   background-image: url(/04unit/images/lake.jpg);
   background-position: center;
-  background-size: stretch;
   background-repeat: no-repeat;
 }
 
-/* line 232, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
+/* line 231, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 .card-group .card:nth-child(2) {
   background-image: url(/04unit/images/beach.jpg);
   background-position: center top;
-  background-size: stretch;
   background-repeat: no-repeat;
 }
 
-/* line 238, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
+/* line 236, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 .card-group .card:nth-child(3) {
   background-image: url(/04unit/images/forest.jpg);
   background-position: center top;
-  background-size: stretch;
   background-repeat: no-repeat;
 }
 
-/* line 247, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
+/* line 244, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 .card:hover a {
   background-color: #003d00;
 }
 
-/* line 251, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
+/* line 248, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 .footerWrapper {
   background-color: black;
 }
 
-/* line 254, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
+/* line 251, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 footer {
   color: grey;
   text-align: center;
 }
 
-/* line 257, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
+/* line 254, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 footer a {
   text-decoration: none;
   color: #003d00;

@@ -226,19 +226,16 @@ main {
         .card:nth-child(1) {
                 background-image: url(/04unit/images/lake.jpg);
                 background-position: center;
-                background-size: stretch;
                 background-repeat: no-repeat;
             }
         .card:nth-child(2) {
                 background-image: url(/04unit/images/beach.jpg);
                 background-position: center top;
-                background-size: stretch;
                 background-repeat: no-repeat;
         }
         .card:nth-child(3) {
             background-image: url(/04unit/images/forest.jpg);
             background-position: center top;
-            background-size: stretch;
             background-repeat: no-repeat;
         }
     }
