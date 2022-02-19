@@ -166,17 +166,17 @@ header h1 {
   width: 30%;
   line-height: 120%;
   margin-bottom: 2%;
-  color: #ebebeb;
+  color: white;
 }
 
 /* line 49, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 header p {
-  border-top: 2px solid #868686;
+  border-top: 2px solid #cccccc;
   width: fit-content;
   font-size: .8rem;
   font-family: 'Garamond', serif;
   font-weight: 200;
-  color: #b9b9b9;
+  color: white;
   padding-top: 2%;
 }
 
@@ -198,7 +198,7 @@ ul {
 
 /* line 72, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 ul a {
-  color: #ebebeb;
+  color: white;
   display: block;
   text-decoration: none;
   font-family: 'Garamond', serif;
@@ -209,7 +209,7 @@ ul a {
 
 /* line 81, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 ul li:hover {
-  background-color: #393939;
+  background-color: #4d4d4d;
 }
 
 /* line 85, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
@@ -219,7 +219,7 @@ ul.open {
 
 /* line 91, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 .button {
-  background-color: #ebebeb;
+  background-color: white;
   border-radius: 5%;
   border: none;
   color: black;
@@ -340,7 +340,7 @@ main {
 
 /* line 189, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 .card-group .card {
-  background-color: #b9b9b9;
+  background-color: white;
   border-radius: 10px;
   flex-basis: 100%;
   width: 300px;
@@ -425,7 +425,7 @@ footer {
 /* line 254, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/04unit/scss/_small.scss */
 footer a {
   text-decoration: none;
-  color: #003d00;
+  color: #658f65;
 }
 
 @media only screen and (min-width: 35rem) {
