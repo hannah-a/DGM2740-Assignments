@@ -125,6 +125,7 @@ header {
   color: #740202;
   font-family: "Allura", cursive;
   padding: 1rem;
+  background-color: white;
 }
 
 header figure.logo {
