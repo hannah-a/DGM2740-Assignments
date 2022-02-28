@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Maetra Della Zuppas</title>
+    <title>Maestra Della Zuppas</title>
 </head>
 <body>
     <header class="clearfix">
@@ -17,14 +17,14 @@
             srcset="/05unit/images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
         </figure>
         <div class="company">
-            <h1 id="h1-m">Maestro</h1>
+            <h1 id="h1-m">Maestra</h1>
             <h1 id="h1-d">Della</h1>
             <h1 id="h1-z">Zuppas</h1>
-            <h2>Master of Soup</h2>
         </div>
     </header>
     <nav>
-        <ul>
+        <button id="button"><span>&#9776</span><span>X</span></button>
+        <ul id="ul">
             <li class="active"><a href="#">Our Founder</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">Location</a></li>
@@ -44,45 +44,29 @@
                 </picture>    
             </figure>
         </div>
-        <div class="founder">
+        <div class="founder clearfix">
             <div class="flexDiv">
+                <figure class="founderphoto">
+                      <picture>
+                         <source media="(max-width: 600px)" srcset="../05unit/images/founder300.jpg 300w" sizes="50vw">
+                         <source media="(max-width: 900px)" srcset="../05unit/images/founder450.jpg 450w" sizes="50vw"> 
+                         <source media="(max-width: 1200px)" srcset="../05unit/images/founder600.jpg 600w" sizes="50vw"> 
+                         <img src="../05unit/images/founder600.jpg" alt="Founder">
+                      </picture>
+                      <figcaption>Lucy Laughs in the flowers</figcaption>   
+                </figure>
                 <div class="founderdiv">
                     <h2>Our Founder</h2>
+                    <p>Lucy Magnolia is the best soup chef in all of italy and she loves treating all her customers like her grandchildren.<br> Serving her amazing soups to the President and the shelters, everyone is equal in her eyes and deserves the hearthwarm feeling her delicious recipes provide.<br>Lucy Magnolia's favorite ingredients are: Spicy meatball. Pinch of salt. Stringozzi spaghettoni. Mozzarella linguine alfredo. Pizza pizza tagliatelle, linguine lasagna pepperoni olive oil. Stringozzi spaghettoni. Pinch of salt. Marinara. Anelli, olive oil, basil. Garlic bread pepper lasagna alfredo rigatoni. Bolognese, tortelini penne meatball basil marinara. Spicy meatball. Stringozzi spaghettoni. Marinara. Pinch of salt. Garlic bread pepper lasagna alfredo rigatoni. Oregano bolognese tortelini lasagna. Bolognese, tortelini penne meatball basil marinara.</p>
                 </div> 
-                  <figure class="founderphoto">
-                      <picture>
-                         <source media="(max-width:"     
-                         <img src="../05unit/images/founder600.jpg" alt="Founder" srcset="../05unit/images/founder300.jpg 300w, ../05unit/images/founder400.jpg 400w, ../05unit/images/founder600.jpg 600w">
-                      </picture>   
-                </figure>  
+                  
             </div>    
-        </div>
-        <div class="menu">
-            <div class="flexDiv">
-                <div class="menudiv">
-                    <h3>Menu</h3>
-                </div>    
-            </div>    
-        </div>
-        <div class="location">
-            <div class="flexDiv">
-                <div class="locationdiv">
-                    <h3>Location</h3>
-                </div>    
-            </div>   
-        </div>
-        <div class="contact">
-            <div class="flexDiv">
-                <div class="contactdiv">
-                    <h3>Contact</h3>
-                </div>    
-            </div>  
         </div>
     </main>
     <footer>
         <div>
             <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
-            <p>Old Woman: Photo by Edu Carvalho from Pexels<br>Pumpkin Soup: Photo by Pietro Jeng from Pexels<br>Pasta: Photo by Engin Akyurt from Pexels<br> Kitchen Dude: Photo by Timur Saglambilek from Pexels</p>
+            <p>Old Woman: Photo by Edu Carvalho from Pexels<br>Pumpkin Soup: Photo by Pietro Jeng from Pexels</p>
         </div>
     </footer>
     <script src="/05unit/script.js"></script>

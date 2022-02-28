@@ -1,0 +1,14 @@
+
+nav, nav ul, nav ul.open{
+    display: block;
+}
+
+//increased specifity makes the list a row
+#ul {
+    display: flex;
+    padding-bottom: .2rem; //slightly uneven
+}
+button {
+    display: none;
+}
+

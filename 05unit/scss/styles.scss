@@ -4,9 +4,9 @@
 @import "normalize";
 @import "variables";
 @import "small";
-@media only screen and (max-width: 35rem) {
+@media only screen and (min-width: 35rem) {
     @import "medium";
 }
-@media only screen and (max-width: 75rem) {
+@media only screen and (min-width: 75rem) {
     @import "large";
 }
