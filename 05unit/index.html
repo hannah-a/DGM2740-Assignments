@@ -4,31 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/05unit/css/styles.css" rel="stylesheet">
+    <link href="/05unit/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>Maetra Della Zuppas</title>
 </head>
 <body>
-    <header>
-        <h1 id="h1-m">Maestro</h1>
-        <h1 id="h1-d">Della</h1>
-        <h1 id="h1-z">Zuppas</h1>
-        <h2>Master of Soup</h2>
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="/05unit/images/souplogo.png" alt="logo"
+            srcset="/05unit/images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+        </figure>
+        <div class="company">
+            <h1 id="h1-m">Maestro</h1>
+            <h1 id="h1-d">Della</h1>
+            <h1 id="h1-z">Zuppas</h1>
+            <h2>Master of Soup</h2>
+        </div>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Our Founder</a></li>
+            <li class="active"><a href="#">Our Founder</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">Location</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <div class="hero"></div>
+        <div class="hero">
+            <figure class="heroimg">
+                <picture>
+                    <source media="(max-width: 450px)" srcset="/05unit/images/pump450.jpg">
+                    <source media="(max-width: 600px)" srcset="/05unit/images/pump600.jpg">
+                    <source media="(max-width: 750px)" srcset="/05unit/images/pump750.jpg">
+                    <source media="(max-width: 900px)" srcset="/05unit/images/pump900.jpg">
+                    <source media="(max-width: 1050px)" srcset="/05unit/images/pump1050.jpg">
+                    <img src="/05unit/images/pump1050.jpg" alt="Pouring soup into pumpkin bowls.">
+                </picture>    
+            </figure>
+        </div>
         <div class="founder">
             <div class="flexDiv">
                 <div class="founderdiv">
-                    <h3>Our Founder</h3>
-                </div>    
+                    <h2>Our Founder</h2>
+                </div> 
+                  <figure class="founderphoto">
+                      <picture>
+                         <source media="(max-width:"     
+                         <img src="../05unit/images/founder600.jpg" alt="Founder" srcset="../05unit/images/founder300.jpg 300w, ../05unit/images/founder400.jpg 400w, ../05unit/images/founder600.jpg 600w">
+                      </picture>   
+                </figure>  
             </div>    
         </div>
         <div class="menu">
