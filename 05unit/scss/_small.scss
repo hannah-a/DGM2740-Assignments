@@ -29,7 +29,6 @@ header {
         }
     }
 
-
     #h1-m {
         font-size: 2rem;
     }
@@ -101,6 +100,11 @@ button.open span:nth-child(1){
 button.open span:nth-child(2){
     display: block;
 }
+.heroimg picture img {      
+    width: 100%;
+    height: auto;
+}
+
 .founder {
     width: 100%;
     padding: 1rem 0;
