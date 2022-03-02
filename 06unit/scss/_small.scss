@@ -1,0 +1,6 @@
+figure.myarc img { //different class for each figure
+    float: right;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(100% at 100% 0%);
+    margin:.5rem;
+}
