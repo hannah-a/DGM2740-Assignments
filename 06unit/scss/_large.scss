@@ -1,0 +1,34 @@
+
+
+header {
+    grid-template-columns: 51px auto auto;
+}
+
+nav {
+    button{display: none;}
+    justify-self: end;
+    ul, ul.open {
+        position: relative;
+        display: flex;
+        background-color: transparent;
+        width: auto;
+    }
+    ul li {
+        border: none;
+    }
+    ul li a {
+        color: #333;
+        border-radius: 5px;
+        padding: .5rem 1rem;
+        margin-left: .2rem;
+        transition: all .5s ease;
+    }
+    ul li a:hover { //has specifity of 3 except with !important
+        background-color: black;
+        color: white!important;
+    }
+    ul li.active a { //has specifity of four
+        color: green;
+
+    }
+}

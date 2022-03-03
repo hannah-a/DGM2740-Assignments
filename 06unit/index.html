@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/06unit/css/styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/06unit/css/styles.css" rel="stylesheet" />
     <title></title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="headerWrapper">
-        <header>
-            <img class="logo" src="#" alt="The HoneyBees Logo">
-            <h1>The BumbleBees</h1>
-            <nav>
-                <ul>
-                    <li class="active"><a href="#">Tours</a></li>
-                    <li><a href="#">Gear</a></li>
-                    <li><a href="#">Music</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>    
+      <header>
+        <img class="logo" src="#" alt="The HoneyBees Logo" />
+        <h1>The BumbleBees</h1>
+        
+        <nav>
+            <button id="hamburger">&#9776;</button>
+          <ul id="primaryNav">
+            <li class="active"><a href="#">Tours</a></li>
+            <li><a href="#">Gear</a></li>
+            <li><a href="#">Music</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main>
-        <section class="theGallery">
-            <div class="members">
-                <div class="hannah">
+      <section class="theGallery">
+        <figure>
+          <img
+            alt="A girl's eye"
+            class="lazy"
+            data-src="/06unit/images/asiangirl/small.jpg" 
+          />
+          <figcaption>A girl</figcaption>
+        </figure>
+        <figure>
+            <img
+              alt="A girl's eye"
+              class="lazy"
+              data-src="/06unit/images/asiangirl/small.jpg" 
+            />
+            <figcaption>A girl</figcaption>
+          </figure>
+          <figure>
+            <img
+              alt="A girl's eye"
+              class="lazy"
+              data-src="/06unit/images/asiangirl/small.jpg" 
+            />
+            <figcaption>A girl</figcaption>
+          </figure>
 
-                </div>
-                <div class="jolee">
 
-                </div>
-                <div class="jacob">
-
-                </div>
-                <div class="sarah">
-
-                </div>
-            </div>
-            <div class="images">
-
-            </div>
-        </section>
+        <div class="members">
+          <div class="hannah"></div>
+          <div class="jolee"></div>
+          <div class="jacob"></div>
+          <div class="sarah"></div>
+        </div>
+        <div class="images"></div>
+      </section>
     </main>
     <div class="footerWrapper">
-        <footer>
-            <div class="photociting">
-                <p>Photo by Tuấn Kiệt Jr. from Pexels<br>Photo by Nicolas Postiglioni from Pexels<br>Photo by T from Pexels<br>Photo by Andrea Piacquadio from Pexels<br>Photo by 42 North: https://www.pexels.com/photo/person-playing-brown-guitar-1407322/<br>Photo by Charles Parker: https://www.pexels.com/photo/focused-asian-woman-practicing-traditional-musical-instrument-6647468/<br>Photo by Wendy Wei from Pexels<br>Photo by Aleksei Andreev from Pexels<br>Photo by Egor Kamelev from Pexels<br>Photo by Mark Angelo Sampan from Pexels<br>Photo by David Yu from Pexels<br>Photo by Wendy Wei from Pexels<br>Photo by mikky k from Pexels<br>Photo by Harrison Haines from Pexels<br>Photo by Shelagh Murphy from Pexels</p>
-            </div>
-        </footer>
-    </div>   
+      <footer>
+        <div class="photociting">
+          <p>
+            Photo by Tuấn Kiệt Jr. from Pexels<br />Photo by Nicolas Postiglioni
+            from Pexels<br />Photo by T from Pexels<br />Photo by Andrea
+            Piacquadio from Pexels<br />Photo by 42 North:
+            https://www.pexels.com/photo/person-playing-brown-guitar-1407322/<br />Photo
+            by Charles Parker:
+            https://www.pexels.com/photo/focused-asian-woman-practicing-traditional-musical-instrument-6647468/<br />Photo
+            by Wendy Wei from Pexels<br />Photo by Aleksei Andreev from
+            Pexels<br />Photo by Egor Kamelev from Pexels<br />Photo by Mark
+            Angelo Sampan from Pexels<br />Photo by David Yu from Pexels<br />Photo
+            by Wendy Wei from Pexels<br />Photo by mikky k from Pexels<br />Photo
+            by Harrison Haines from Pexels<br />Photo by Shelagh Murphy from
+            Pexels
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
+    <script>
+    var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy",
+        threshold: 0
+      });</script>
     <script src="/06unit/script.js" defer></script>
-</body>
+  </body>
 </html>
