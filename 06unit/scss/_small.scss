@@ -1,8 +1,20 @@
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+
+
 header {
     display: grid;
     grid-template-columns: 51px auto;
 }
-
 
 
 
