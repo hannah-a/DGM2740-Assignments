@@ -1,7 +1,7 @@
 
 
 header {
-    grid-template-columns: 51px auto auto;
+    grid-template-columns: 100px auto auto;
 }
 
 nav {
@@ -30,5 +30,11 @@ nav {
     ul li.active a { //has specifity of four
         color: green;
 
+    }
+}
+
+.members {
+    .member {
+      flex-basis: 20%;  
     }
 }

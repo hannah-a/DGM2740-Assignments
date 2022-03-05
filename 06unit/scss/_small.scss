@@ -1,3 +1,6 @@
+// font-family: 'Abel', sans-serif;
+// font-family: 'Bungee', cursive;
+
 * {
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;
@@ -6,7 +9,9 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Abel', sans-serif;
+    background-color: black;
+    color: rgb(226, 226, 226);
 }
 
 header, main, footer {
@@ -16,7 +21,15 @@ header, main, footer {
 
 header {
     display: grid;
-    grid-template-columns: 51px auto;
+    grid-template-columns: 100px auto;
+    padding: 1rem 0;
+    figure {
+        width: 100px;
+    }
+    h1 {
+        font-family: 'Bungee', sans-serif;
+        font-size: 2rem;
+    }
 }
 
 
@@ -69,7 +82,6 @@ nav {
     }
 }
 
-
 //Gallery photos
 section.theGallery figure {
     width: 100%;
@@ -83,4 +95,31 @@ section.thegallery figure img {
     width: 100%;
     height: auto;
     position: absolute;
+}
+img {
+    width: 100%;  
+}
+
+.members {
+    color: black;
+    padding: 1rem 1rem 2rem 1rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(124, 124, 124, 0.97) 0%, rgba(255,255,255,1) 100%);
+    .member {
+        margin: 2%;
+        h2 {
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+        figure {
+            width: 100px;
+            float: right;
+            margin: .5rem;
+            img {
+               
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
