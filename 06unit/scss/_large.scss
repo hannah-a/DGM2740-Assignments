@@ -5,6 +5,7 @@ header {
 }
 
 nav {
+margin: auto 0;
     button{display: none;}
     justify-self: end;
     ul, ul.open {
@@ -17,7 +18,7 @@ nav {
         border: none;
     }
     ul li a {
-        color: #333;
+        color: rgb(255, 255, 255);
         border-radius: 5px;
         padding: .5rem 1rem;
         margin-left: .2rem;
@@ -25,10 +26,10 @@ nav {
     }
     ul li a:hover { //has specifity of 3 except with !important
         background-color: black;
-        color: white!important;
+        color: rgb(255, 197, 121)!important;
     }
     ul li.active a { //has specifity of four
-        color: green;
+        color: rgb(0, 0, 0);
 
     }
 }
@@ -36,5 +37,6 @@ nav {
 .members {
     .member {
       flex-basis: 20%;  
+
     }
 }

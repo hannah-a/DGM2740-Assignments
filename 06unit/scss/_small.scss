@@ -27,8 +27,10 @@ header {
         width: 100px;
     }
     h1 {
+        display: block;
         font-family: 'Bungee', sans-serif;
-        font-size: 2rem;
+        font-size: clamp(1rem, 4vw, 3rem);
+        margin: auto 0;
     }
 }
 
@@ -50,12 +52,12 @@ nav {
         right: 0;
         background: transparent;
         border: none;
-        font-size: 1.5rem;
-        color: #333;
+        font-size: 2rem;
+        color: $navigationColor;
         padding: .5rem 2vw .5rem 1rem;
     }
     ul {
-        background-color: red;
+        background-color: $navigationColor;
         position: absolute;
         right: 0;
         width: 100%; //buttons fill width
@@ -65,20 +67,22 @@ nav {
         display: block;
     }
     ul li {
-        border-bottom: 1px solid black;
+        border-bottom: 3px solid black;
     }
     ul li a {
         display: block;
-        padding: 9rem 2vw;
+        padding: 2rem 2vw;
         color: black;
         text-decoration: none;
         text-align: right;
+        font-size: clamp(1rem, 2vw, 2rem);
+        font-weight: 600;
     }
     ul li.active a {
-        background-color: rgb(126, 0, 0);
+        background-color: lighten($navigationColor, 20%);
     }
     ul li a:hover {
-        background-color: rgb(126, 0, 0);
+        background-color: lighten($navigationColor, 20%);
     }
 }
 
@@ -100,12 +104,12 @@ img {
     width: 100%;  
 }
 
-.members {
+.members { //div for articles
     color: black;
     padding: 1rem 1rem 2rem 1rem;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(124, 124, 124, 0.97) 0%, rgba(255,255,255,1) 100%);
-    .member {
+    .member { //each member
         margin: 2%;
         h2 {
             font-size: 2rem;
@@ -113,13 +117,29 @@ img {
         }
         figure {
             width: 100px;
-            float: right;
+            float: right; //floats picture to the right
             margin: .5rem;
             img {
                
                 width: 100%;
                 height: auto;
             }
+        }
+    }
+}
+
+footer {
+    margin-top: 10vh;
+    .copyInfo  {//copyright info
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .photoCiting {
+        padding-top: 6rem;
+        text-align: center;    
+        a {
+           text-decoration: none; 
+           color: white;
         }
     }
 }
