@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../scss/styles.scss",
+		"../scss/_variables.scss",
+		"../scss/_normalize.scss",
+		"../scss/_small.scss",
+		"../scss/_medium.scss",
+		"../scss/_large.scss"
+	],
+	"sourcesContent": [
+		"\r\n@import \"variables\";\r\n@import \"normalize\";\r\n\r\n@import \"small\";\r\n\r\n@media only screen and (min-width: 35rem) {\r\n    @import \"medium\";\r\n}\r\n\r\n@media only screen and (min-width: 75rem) {\r\n    @import \"large\";\r\n}",
+		"$gutter: 2vw;",
+		"",
+		"// font-family: 'Cinzel', serif;\r\n// font-family: 'Vollkorn', serif;\r\n\r\n* {\r\n    -moz-box-sizing: border-box; \r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\nhtml {\r\n    -webkit-text-size-adjust: 100%;\r\n    -ms-text-size-adjust: 100%;\r\n    font-family: 'Cinzel';\r\n}\r\n\r\nheader, main, footer {\r\n    max-width: 75rem;\r\n    margin: 0 auto;\r\n}\r\n\r\nheader {\r\n    font-family: 'Vollkorn';\r\n}\r\n\r\n\r\n//Columns\r\n\r\n@for $i from 1 through 12 {\r\n    $w:($i / 12) * 100;\r\n    .small-#{$i} {flex-basis: $w;}\r\n}",
+		"//Columns\r\n\r\n@for $i from 1 through 12 {\r\n    $w:($i / 12) * 100;\r\n    .medium-#{$i} {flex-basis: $w;}\r\n}",
+		"\r\n\r\n\r\n\r\n//Columns\r\n\r\n@for $i from 1 through 12 {\r\n    $w:($i / 12) * 100;\r\n    .large-#{$i} {flex-basis: $w;}\r\n}"
+	],
+	"names": [],
+	"mappings": "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"
+}
