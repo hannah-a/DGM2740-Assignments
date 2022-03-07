@@ -12,14 +12,35 @@ html {
     font-family: 'Cinzel';
 }
 
-header, main, footer {
+header, main, nav, footer {
     max-width: 75rem;
     margin: 0 auto;
 }
 
 header {
-    font-family: 'Vollkorn';
+    background-color: red;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    figure {
+        width: clamp(50px, 80%, 200px);
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    h1{
+        font-family: 'Cinzel', serif;
+        font-size: clamp(4vw, 7vw, 4rem);
+        
+    }
+    h2 {
+       font-family: 'Vollkorn'; 
+       font-size: clamp(1rem, 3vw, 2rem);
+    }
 }
+
+
+
 
 
 //Columns
