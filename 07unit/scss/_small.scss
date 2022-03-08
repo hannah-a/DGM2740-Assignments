@@ -11,12 +11,16 @@ html {
     -ms-text-size-adjust: 100%;
     font-family: 'Cinzel';
 }
-
+body {
+    display: grid;
+}
 header, main, nav, footer {
     max-width: 75rem;
     margin: 0 auto;
 }
-
+div#headerWrapper {
+    grid-row-start: 1;
+}
 header {
     background-color: red;
     display: grid;
@@ -40,12 +44,43 @@ header {
 }
 
 
+div#navWrapper {
+    grid-row-start: 4;
+}
 
+div#mainWrapper {
+    grid-row-start: 2;
+}
+main {
+    section {
+        div {
+            figure{
+                width: 200px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
 
-
+div#footerWrapper {
+    grid-row-start: 3;
+}
 //Columns
+.block {
+    display: block;
+}
+section.flexed {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 @for $i from 1 through 12 {
-    $w:($i / 12) * 100;
+    $w:($i / 12) * 100%;
     .small-#{$i} {flex-basis: $w;}
+}
+.column {
+    padding: 0 $gutter;
 }

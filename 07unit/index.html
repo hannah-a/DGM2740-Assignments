@@ -1,131 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/16a0001049.js" crossorigin="anonymous"></script>
     <link href="/07unit/css/styles.css" rel="stylesheet">
     <title>Armstrong Law</title>
 </head>
-<body>
-    <header>
-        <figure>
-            <img src="/07unit/images/logo.png" alt="Logo">
-        </figure>
-        <h1>Armstrong Law</h1>
-        <h2 id="phoneNumber">1(801)-204-5687</h2>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Services</a></li>
-            <li class="active"><a href="#">Contact Us</a></li>
-            <li><a href="#">Testimonials</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="4-articles">
-            <div id="article-1" class="small-12 medium-12">
-                <h2>Briana Banewolf</h2>
-                <figure>
-                    <img src="/07unit/images/briana.jpg" alt="Briana Banewolf">
-                </figure>
-                <button>Read More</button>
-            </div>
-            <div id="article-2">
-                <h2>Dana Mandrell</h2>
-                <figure>
-                    <img src="/07unit/images/dana.jpg" alt="Dana Mandrell">
-                </figure>
-                <button>Read More</button>
-            </div>
-            <div id="article-3">
-                <h2>Enby Visciprell</h2>
-                <figure>
-                    <img src="/07unit/images/enby.jpg" alt="Enby Visciprell">
-                </figure>
-                <button>Read More</button>
-            </div>
-            <div id="article-4">
-                <h2>Julie Armstrong</h2>
-                <figure>
-                    <img src="/07unit/images/julie.jpg" alt="Julie Armstrong">
-                </figure>
-                <button>Read More</button>
-            </div>
-        </section>
-        <section id="3-cta">
-            <div id="cta-1">
-                <button>Free Consultations</button>
-            </div>
-            <div id="cta-2">
-                <button>State Services</button>
-            </div>
-            <div id="cta-3">
-                <button>Pro-Bono Clients</button>
-            </div>
-        </section>
-        <section id="3-blog">
-            <div id="blog-1">
-                <h3>Our Blog</h3>
-            </div>
-            <div id="blog-2">
-                <h3>So You Didn't Do It...</h3>
-                <p>Navigating the legal system can be time-consuming and emotionally exhausting. If you didn't actually do the crime you're being prosectued for, it can feel like the system is making you a villian when you don't deserve to be. This isn't the start of your villian origin story. Read more about how you can help yourself...</p>
-            </div>
-            <div id="blog-3">
-                <h3>The Advice Lawyers Can't Give</h3>
-                <p>What do you do when an angry ex-wife tries to ruin your life and set you up for crime you didn't commit, or did you? We "won't" tell you what to do, or what not to do with the evidence... </p>
-            </div>
-        </section>
-        <section id="tip-faw-flex">
-            <div id="3-tips">
-                <div id="tip-1">
-                    <h3>Tip of the Day</h3>
-                    <p>The only advice you should take from nonlawyers is, "get a lawyer," and, "don't talk to the police."</p>
-                </div>
-                <div id="tip-2">
-                </div>
-                <div id="tip-3">
-                </div>
-            </div>
-            <div id="3-faq">
-                <div id="faq-1">
-                    <h3>FAQ</h3>
-                    <p>Should I tell my lawyer everything?</p>
-                    <p>Yes, but don't spill the beans before you sign the contract. Your lawyer might be batting for the opposite team.</p>
-                </div>
-                <div id="faq-2">
-                    <h3>FAQ</h3>
-                    <p>I'm in jail, will you represent me on the spot?</p>
-                    <p>No, you should've been a responsible adult and obtained a lawyer before getting in trouble.</p>
-                </div>
-                <div id="faq-3">
-                    <h3>FAQ</h3>
-                    <p>What's the secret to a successful hearing?</p>
-                    <p>You, your lawyer and the prosecutor showing up. </p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div id="socialButtons">
 
-        </div>
-        <div id="hannahInfo">
-            <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
-        </div>
-        <div id="imageCiting">
-            <p>Photo by Pavel Danilyuk from Pexels</p>
-            <p>Photo by cottonbro from Pexels</p>
-            <p>Photo by Pavel Danilyuk from Pexels</p>
-            <p>Photo by August de Richelieu from Pexels</p>
-            <p>Photo by Sora Shimazaki from Pexels</p>
-        </div>
-    </footer>
-<script src="script.js"></script>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <figure>
+                <img src="/07unit/images/logo.png" alt="Logo">
+            </figure>
+            <h1>Armstrong Law</h1>
+            <!-- <button id="phoneButton"><i class="fa-solid fa-phone"></i></button>
+            <h2 id="phoneNumber">1(801)-204-5687</h2> -->
+            <div id="hamburger"><a href="#closex"><i class="fa-solid fa-bars"></i></a></div>
+        </header>
+    </div>
+    <div id="navWrapper">
+        <nav>
+            <div id="closex"><a href="#hamburger">x</a></div>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li class="active"><a href="#">Contact Us</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mainWrapper">
+        <main>
+            <section id="4-articles" class="flexed">
+                <div id="article-1" class="column">
+                    <h2>Briana Banewolf</h2>
+                    <figure>
+                        <img src="/07unit/images/briana.jpg" alt="Briana Banewolf">
+                    </figure>
+                    <button>Read More</button>
+                </div>
+                <div id="article-2" class="column">
+                    <h2>Dana Mandrell</h2>
+                    <figure>
+                        <img src="/07unit/images/dana.jpg" alt="Dana Mandrell">
+                    </figure>
+                    <button>Read More</button>
+                </div>
+                <div id="article-3" class="column">
+                    <h2>Enby Visciprell</h2>
+                    <figure>
+                        <img src="/07unit/images/enby.jpg" alt="Enby Visciprell">
+                    </figure>
+                    <button>Read More</button>
+                </div>
+                <div id="article-4" class="column">
+                    <h2>Julie Armstrong</h2>
+                    <figure>
+                        <img src="/07unit/images/julie.jpg" alt="Julie Armstrong">
+                    </figure>
+                    <button>Read More</button>
+                </div>
+            </section>
+            <section id="3-cta" class="flexed">
+                <div id="cta-1" class="small-12 medium-6">
+                    <p>                        The only advice you should take from nonlawyers is, "get a lawyer," and, "don't talk to the
+                    </p>
+                    <button >Free Consultations</button>
+                </div>
+                <div id="cta-2" class="small-12 medium-6">
+                    <button>State Services</button>
+                </div>
+                <div id="cta-3">
+                    <button>Pro-Bono Clients</button>
+                </div>
+            </section>
+            <section id="3-blog" class="flexed" >
+                <div id="blog-1">
+                    <h3>Our Blog</h3>
+                </div>
+                <div id="blog-2">
+                    <h3>So You Didn't Do It...</h3>
+                    <p>Navigating the legal system can be time-consuming and emotionally exhausting. If you didn't
+                        actually do the crime you're being prosectued for, it can feel like the system is making you a
+                        villian when you don't deserve to be. This isn't the start of your villian origin story. Read
+                        more about how you can help yourself...</p>
+                </div>
+                <div id="blog-3">
+                    <h3>The Advice Lawyers Can't Give</h3>
+                    <p>What do you do when an angry ex-wife tries to ruin your life and set you up for crime you didn't
+                        commit, or did you? We "won't" tell you what to do, or what not to do with the evidence... </p>
+                </div>
+            </section>
+            <section id="tip-faq-flex" class="flexed" >
+                <div id="3-tips">
+                    <div id="tip-1">
+                        <h3>Tip of the Day</h3>
+                        <p>The only advice you should take from nonlawyers is, "get a lawyer," and, "don't talk to the
+                            police."</p>
+                    </div>
+                    <div id="tip-2">
+                    </div>
+                    <div id="tip-3">
+                    </div>
+                </div>
+                <div id="3-faq">
+                    <div id="faq-1">
+                        <h3>FAQ</h3>
+                        <p>Should I tell my lawyer everything?</p>
+                        <p>Yes, but don't spill the beans before you sign the contract. Your lawyer might be batting for
+                            the opposite team.</p>
+                    </div>
+                    <div id="faq-2">
+                        <h3>FAQ</h3>
+                        <p>I'm in jail, will you represent me on the spot?</p>
+                        <p>No, you should've been a responsible adult and obtained a lawyer before getting in trouble.
+                        </p>
+                    </div>
+                    <div id="faq-3">
+                        <h3>FAQ</h3>
+                        <p>What's the secret to a successful hearing?</p>
+                        <p>You, your lawyer and the prosecutor showing up. </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="footerWrapper">
+        <footer>
+            <div id="socialButtons">
+            </div>
+            <div id="hannahInfo">
+                <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
+            </div>
+            <div id="imageCiting">
+                <p>Photo by Pavel Danilyuk from Pexels</p>
+                <p>Photo by cottonbro from Pexels</p>
+                <p>Photo by Pavel Danilyuk from Pexels</p>
+                <p>Photo by August de Richelieu from Pexels</p>
+                <p>Photo by Sora Shimazaki from Pexels</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
