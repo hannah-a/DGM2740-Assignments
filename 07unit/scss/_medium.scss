@@ -1,43 +1,46 @@
-//Columns
 
-@for $i from 0 through 12 {
-    $w:($i / 12) * 100%;
-    .medium-#{$i} {flex-basis: $w;}
-}
 header {
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 60% 20%; //Changes grid for logo, company name and phone number
     #phoneNumber {
         display: block;
     }
-    #phoneButton {
+    #phoneButton { //Removes of phone icon
         display: none;
     }
-    #hamburger {
+    #hamburger { //Removes of hamburger icon
         display: none;
     }
 }
-div#navWrapper {
+div#navWrapper { //Places navigation below header on medium and large screens
     grid-row-start: 2;
 }
-nav {
+
+nav { //Right side navigation for medium and large screens
     ul {
         justify-content: right;
     }
-    #closex {
+    #closex { //Removes arrow icon
         display: none;
     }
 }
-div#mainWrapper {
+
+div#mainWrapper { //Places main element below navigation
     grid-row-start: 3;
 }
-div#footerWrapper {
+
+div#footerWrapper { //Full width color for navigation
     grid-row-start: 4;
     padding: 1rem 0;
-  background: rgb(95, 84, 84);
-  background: linear-gradient(
+    background: rgb(95, 84, 84);
+    background: linear-gradient(
     0deg,
     rgb(255, 255, 255) 0%,
     rgb(223, 217, 224) 100%
   );
 }
 
+//Columns
+@for $i from 0 through 12 {
+    $w:($i / 12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+}
