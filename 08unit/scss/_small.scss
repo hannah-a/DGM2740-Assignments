@@ -10,27 +10,24 @@ html {
     font-family: "Vollkorn", serif;
 }
   
-body {
+.body {
     background-image: url(/08unit/images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#storiesGrid {
+.main__storygrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.story {
+.main__story {
     display: grid;
     justify-self: center;
     align-items: center;
 }
 
-figure {
-    width: 100%;
-}
 
-.mainspan {
+.main__story--topstory {
     grid-column: 1/3;
     grid-row: 1/3;
 }
