@@ -1,0 +1,42 @@
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: "Vollkorn", serif;
+}
+  
+body {
+    background-image: url(/08unit/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#storiesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.story {
+    display: grid;
+    justify-self: center;
+    align-items: center;
+}
+
+figure {
+    width: 100%;
+}
+
+.mainspan {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+
+// @for $i from 0 through 12 {
+//     $w:($i / 1.) * 100%;
+//     .large-#{$i} {flex-basis: $w;}
+// }
