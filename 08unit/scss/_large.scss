@@ -1,0 +1,21 @@
+.main__storygrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    .main__story--topstory {
+        grid-column: 1/4;
+        grid-row: 1/3;
+    }
+}
+
+
+.nav {
+    .nav__anchor {
+        font-size: clamp(2rem, 1vw, 3rem);
+    }
+}
+
+.footer {
+    .footer__links{
+        display: flex;
+    }
+}
