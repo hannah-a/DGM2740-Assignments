@@ -11,8 +11,12 @@
 
 
 .nav {
+   
     .nav__button {
         display: none;
+    }
+     .nav__ul {
+        display: flex;
     }
     .nav__ul.nav__button--open {
         display: flex;

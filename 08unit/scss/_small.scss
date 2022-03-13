@@ -29,8 +29,6 @@ html {
 
     .nav__hamburger {
         font-size: 1.5rem; 
-        animation-name: twirl;
-        animation-duration: 2s;
     }
     
     .nav__exit {
@@ -40,7 +38,6 @@ html {
     }
     .nav__ul.nav__button--open {
         display: block; 
-        
     }
     .nav__hamburger--closed {
         display: none;  
