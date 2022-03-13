@@ -24,10 +24,44 @@ html {
 }
 
 .nav {
-    background-color: $navColor;
+    background-color: white;
+    padding: 1rem;
 
+    .nav__hamburger {
+        font-size: 1.5rem; 
+        animation-name: twirl;
+        animation-duration: 2s;
+    }
+    
+    .nav__exit {
+        font-size: 1.5rem;
+        animation-name: twirl;
+        animation-duration: 2s;
+    }
+    .nav__ul.nav__button--open {
+        display: block; 
+        
+    }
+    .nav__hamburger--closed {
+         display: none;  
+
+    }  
+    .nav__exit {
+        display: none;
+    }
+    .nav__exit.nav__exit--open {
+        display: block;
+    }
+    @keyframes twirl {
+        from {
+        }
+        to {
+            transform: rotatex(180deg);
+            color: black;
+        }
+    }
     .nav__ul {
-        padding: 1rem;
+        display: none;
     }
     .nav__li {
         padding-top: 1rem;
@@ -46,10 +80,11 @@ html {
     }
 }
 
+
 .main__storygrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr .8fr .8fr .8fr;
     gap: $gridGap;
     max-width: 80rem;
     margin: 1rem auto;
@@ -76,6 +111,8 @@ html {
     .main__figure:hover {
         background-color: white;
         box-shadow: 0 3px 6px rgb(27, 27, 27);
+
+        cursor: pointer;
     }  
     .main__figcaption {
         padding: 1rem;
