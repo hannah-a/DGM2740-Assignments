@@ -16,3 +16,5 @@ ___
 [06-The BumbleBee's](https://priceless-northcutt-72657e.netlify.app/06unit/index.html)
 
 [07-Armstrong Law](https://priceless-northcutt-72657e.netlify.app/07unit/index.html)
+
+[08-Channel KU-TV News]()
