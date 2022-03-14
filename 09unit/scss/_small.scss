@@ -1,0 +1,50 @@
+// font-family: 'Alegreya Sans SC', sans-serif;
+// font-family: 'Spinnaker', sans-serif;
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: 'Spinnaker', sans-serif;
+}
+  
+
+
+.header, .nav, .main, .footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+
+
+
+
+picture {position: relative};
+picture div {
+    position: absolute;
+    bottom: 0; //allows both elements to match at the bottom
+}
+
+.main__card:nth-child(1) {
+    background-image: url("#");
+}
+.main__anchor {
+    display: block;
+    height: 300px;
+    transistion: all .5s ease-in;
+}
+
+div:nth-child(1) a {
+    background-color: white;
+}
+
+div a:hover {
+    background: none;
+    text-shadow: 0 0 4px black; 
+}
+
+//28, 58, 75; 448px, 928px, 1200px; 449px, 464px, 300px;

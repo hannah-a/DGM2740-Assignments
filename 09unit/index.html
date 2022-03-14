@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="/09unit/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Spinnaker&display=swap" rel="stylesheet">
     <title></title>
 </head>
 <body class="body">
@@ -14,17 +17,65 @@
     </header>
     <nav class="nav">
         <ul class="ul">
-            <li class="ul__li"><a href="" class="ul__anchor"></a></li>
-            <li class="ul__li"><a href="" class="ul__anchor"></a></li>
-            <li class="ul__li"><a href="" class="ul__anchor"></a></li>
+            <li class="ul__li"><a href="#" class="ul__anchor">Explore</a></li>
+            <li class="ul__li"><a href="#" class="ul__anchor">Events</a></li>
+            <li class="ul__li"><a href="#" class="ul__anchor">Administration</a></li>
+            <li class="ul__li"><a href="#" class="ul__anchor">Pay Fines</a></li>
         </ul>
     </nav>
     <main class="main">
         <section class="main__slider">
+            <div class="main__slide">
+                <picture class="picture">
+                    <source srcset="" media="(max-width: 34.9rem)"> <!--For images smaller then 35rem, art direction-->
+                    <source srcset="" media="(min-width: 35rem)"> <!--For images bigger than 35rem, for medium and large screens-->
+                    <img src="" alt="" class="picture__fallbackImg">
+                    <div class="picture__descDiv">
+                        <p class="picture__descParagraph">
+                            
+                        </p>
+                    </div>
+                </picture> 
+            </div>
+            <div class="main__slide">
 
+            </div>
+            <div class="main__slide">
+
+            </div>
+            <div class="main__slide">
+
+            </div>
+            <div class="main__slide">
+
+            </div>
         </section>
-        <section class="main__iconButtons">
-            
+        <section class="main__cards">
+            <h2 class="main__pagetitle">Plan Your Visit</h2>
+            <div class="main__card"> <!--background image is in division tag-->
+                <a href="" class="main__cardAnchor">
+                    <img src="" alt="" class="main__cardIcon">
+                    <h3 class="main__cardTitle"></h3>
+                </a>
+            </div>
+            <div class="main__card">
+                <a href="" class="main__cardAnchor">
+                    <img src="" alt="" class="main__cardIcon">
+                    <h3 class="main__cardTitle"></h3>
+                </a>
+            </div>
+            <div class="main__card">
+                <a href="" class="main__cardAnchor">
+                    <img src="" alt="" class="main__cardIcon">
+                    <h3 class="main__cardTitle"></h3>
+                </a>
+            </div>
+            <div class="main__card">
+                <a href="" class="main__cardAnchor">
+                    <img src="" alt="" class="main__cardIcon">
+                    <h3 class="main__cardTitle"></h3>
+                </a>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -34,6 +85,18 @@
         <div class="footer__imgCiting">
         </div>
     </footer>
-<script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/09unit/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.main__slide').slick ({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                cssEase: 'ease-in',
+                autoplay: true
+            })
+        })
+    </script>
 </body>
 </html>
