@@ -9,3 +9,5 @@ buttonDiv.addEventListener('click', () => {
     hamburgerDiv.classList.toggle("nav__hamburger--closed")
     exit.classList.toggle("nav__exit--open")
 })
+
+

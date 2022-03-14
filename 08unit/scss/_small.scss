@@ -25,19 +25,25 @@ html {
 
 .nav {
     background-color: white;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
 
+    .nav__button {
+        height: 44px;
+        width: 44px;
+        margin: auto 0;
+    }
     .nav__hamburger {
-        font-size: 1.5rem; 
+        font-size: 2rem; 
     }
     
     .nav__exit {
-        font-size: 1.5rem;
+        font-size: 2rem;
         animation-name: twirl;
         animation-duration: 2s;
     }
     .nav__ul.nav__button--open {
-        display: block; 
+        display: block;
+        padding-bottom: 1rem; 
     }
     .nav__hamburger--closed {
         display: none;  
@@ -76,7 +82,29 @@ html {
         border-bottom: 2px solid black;
     }
 }
+// nav button {
+//     position: relative;
+//     .line {
+//         position: absolute;
+//         height: 2px;
+//         left: 20%;
+//         width: 60px;
+//     }
+//  .top { top: 29%;}
+//  .middle {top: 48%;}
+//  .bottom {top: 67%;}
+// }
+// #hamburgerBtn.open {
+//     .top {
+//         transform: rotate(45deg);
+//         top: 48%;
+//     }
+//     .middle, .bottom {
+//         transform: rotate(-45deg);
+//         top: 48%;
+//     }
 
+// }
 
 .main__storygrid {
     display: grid;
