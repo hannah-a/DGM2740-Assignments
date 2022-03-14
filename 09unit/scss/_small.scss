@@ -12,36 +12,71 @@
     font-family: 'Spinnaker', sans-serif;
 }
   
-
+.body {
+    font-family:'Spinnaker', sans-serif;
+}
 
 .header, .nav, .main, .footer {
     max-width: 64rem;
     margin: 0 auto;
 }
 
+.header {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    .header__company {
+        font-size: 2rem;
+    }
+}
 
-
-
-picture {position: relative};
-picture div {
+                                                     
+.picture {position: relative};
+.picture__descDiv {
+    color: black;
     position: absolute;
     bottom: 0; //allows both elements to match at the bottom
 }
 
-.main__card:nth-child(1) {
-    background-image: url("#");
+
+.main__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.main__anchor {
+//Background images for the cards that appear under color
+.main__card:nth-child(1) {
+    background-image: url("/09unit/images/squareacornstreet/mediumsquare.jpg");
+}
+.main__card:nth-child(2) {
+    background-image: url("/09unit/images/squareheli/mediumsquare.jpg");
+}
+.main__card:nth-child(3) {
+    background-image: url("/09unit/images/squarehotel/mediumsquare.jpg");
+}
+.main__card:nth-child(4) {
+    background-image: url("/09unit/images/squarelibrary/mediumsquare.jpg");
+}
+
+//Setting width of anchors for grid
+.main__cardAnchor {
     display: block;
     height: 300px;
-    transistion: all .5s ease-in;
+    transition: all .5s ease-in;
 }
 
-div:nth-child(1) a {
+//Color for cards
+.main__card:nth-child(1) a {
     background-color: white;
 }
-
-div a:hover {
+.main__card:nth-child(2) a {
+    background-color: white;
+}
+.main__card:nth-child(3) a {
+    background-color: white;
+}
+.main__card:nth-child(4) a {
+    background-color: white;
+}
+//Transition activated by hover
+.main__card a:hover {
     background: none;
     text-shadow: 0 0 4px black; 
 }
