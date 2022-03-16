@@ -22,13 +22,37 @@
 }
 
 .header {
+    height: clamp(20vw, 30vw, 20vw);
+
+    background-image: url(/09unit/images/headerbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  top center;
+    
     font-family: 'Alegreya Sans SC', sans-serif;
     .header__company {
         font-size: 2rem;
     }
 }
 
-                                                     
+.nav {
+}
+.ul {
+
+}
+  
+.ul__exploreUl {
+    display: none;
+}
+
+.ul__exploreUL--open {
+    display: block;
+}
+
+
+
+
+//picture in the slider and description
 .picture {position: relative};
 .picture__descDiv {
     color: black;
@@ -41,6 +65,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+
 //Background images for the cards that appear under color
 .main__card:nth-child(1) {
     background-image: url("/09unit/images/squareacornstreet/mediumsquare.jpg");
