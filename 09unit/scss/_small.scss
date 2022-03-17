@@ -22,12 +22,14 @@
 }
 
 .header {
+    padding: .8rem;
     height: clamp(20vw, 30vw, 20vw);
 
     background-image: url(/09unit/images/headerbackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:  top center;
+    background-position: center center;
+    color: white;
     
     font-family: 'Alegreya Sans SC', sans-serif;
     .header__company {
@@ -35,19 +37,24 @@
     }
 }
 
-.nav {
+nav {
+    .nav__hamburger {
+        font-size: 40px;
+    }
+  
 }
 .ul {
-
+    position: absolute;
+    z-index: 1;
+}
+.ul--closed {
+    display: none;
 }
   
-.ul__exploreUl {
+.ul__exploreUl--closed {
     display: none;
 }
 
-.ul__exploreUL--open {
-    display: block;
-}
 
 
 
@@ -62,8 +69,8 @@
 
 
 .main__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 

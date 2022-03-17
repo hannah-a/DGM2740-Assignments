@@ -1,0 +1,17 @@
+.header {
+    height: 300px;
+}
+
+.ul {
+    position: relative;
+    display: flex;
+}
+.nav__hamburger {
+    display: none;
+}
+.ul--closed {
+    display: block;
+}
+.ul__explore--closed {
+    display: block;
+}
