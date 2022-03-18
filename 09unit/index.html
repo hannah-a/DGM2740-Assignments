@@ -1,142 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="/09unit/css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Spinnaker&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/16a0001049.js" crossorigin="anonymous"></script>
-    <title></title>
-</head>
-<body class="body">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="/09unit/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Spinnaker&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/16a0001049.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Boston City</title>
+  </head>
+  <body class="body">
     <header class="header">
-        <h1 class="header__company">Boston City</h1>
-        <h2 class="header__slogan">SICUT PATRIBUS, SIT DEUS NOBIS</h2>
+      <h1 class="header__company">Boston City</h1>
+      <h2 class="header__slogan">SICUT PATRIBUS, SIT DEUS NOBIS</h2>
+      
     </header>
     <nav class="nav">
-        <div class="nav__button">
-                <div class="nav__hamburger"><i class="fa-solid fa-bars"></i></div>
-                <!-- <div class="nav__exit"><i class="fa-solid fa-xmark"></i></div> -->
-            </div>
-        <ul class="ul">
-            <li class="ul__li"><a href="#" class="ul__anchor">Explore<i class="ul__exploreIcon fa-solid fa-sort-down"></i></a>
-                <ul class="ul__exploreUl">
-                    <li class="ul__exploreList"><a href="#" class="ul__subanchor">Shopping</a></li>
-                    <li class="ul__exploreList"><a href="#" class="ul__subanchor">Restaurants</a></li>
-                    <li class="ul__exploreList"><a href="#" class="ul__subanchor">Museums</a></li>
-                </ul>
+      <div class="nav__button">
+        <div class="nav__hamburger"><i class="fa-solid fa-bars"></i></div>
+        <!-- <div class="nav__exit"><i class="fa-solid fa-xmark"></i></div> -->
+      </div>
+      <ul class="ul">
+        <li class="ul__li ul__exploreLi">
+          <a href="#" class="ul__anchor"
+            >Explore<i class="ul__exploreIcon fa-solid fa-sort-down"></i
+          ></a>
+          <ul class="ul__exploreUl">
+            <li class="ul__exploreList">
+              <a href="#" class="ul__subanchor">Shopping</a>
             </li>
-            <li class="ul__li"><a href="#" class="ul__anchor">Events</a></li>
-            <li class="ul__li"><a href="#" class="ul__anchor">Administration</a></li>
-            <li class="ul__li"><a href="#" class="ul__anchor">Pay Fines</a></li>
-        </ul>
+            <li class="ul__exploreList">
+              <a href="#" class="ul__subanchor">Restaurants</a>
+            </li>
+            <li class="ul__exploreList">
+              <a href="#" class="ul__subanchor">Museums</a>
+            </li>
+          </ul>
+        </li>
+        <li class="ul__li"><a href="#" class="ul__anchor">Events</a></li>
+        <li class="ul__li">
+          <a href="#" class="ul__anchor">Administration</a>
+        </li>
+        <li class="ul__li"><a href="#" class="ul__anchor">Pay Fines</a></li>
+      </ul>
     </nav>
     <main class="main">
-        <section class="main__slider">
-            <div class="main__slide">
-                <picture class="picture">
-                    <source srcset="/09unit/images/city/artdirection.jpg" media="(max-width: 34.9rem)"> <!--For images smaller then 35rem, art direction-->
-                    <source srcset="/09unit/images/city/citynight.jpg" media="(min-width: 35rem)"> <!--For images bigger than 35rem, for medium and large screens-->
-                    <img src="/09unit/images/city/citynight.jpg" alt="Boston City Skyline at Night" class="picture__fallbackImg">
-                </picture> 
-                <div class="picture__descDiv">Boston Nightlife gets Revived with Inflush of Bar Licenses</div>
+      <section class="main__slider">
+        <div class="main__slide">
+          <picture class="picture">
+            <source
+              srcset="/09unit/images/city/artdirection.jpg"
+              media="(max-width: 28.75rem)"
+            />
+            <!--For images smaller then 28.75rem, art direction-->
+            <source
+              srcset="/09unit/images/city/citynight.jpg"
+              media="(min-width: 35rem)"
+            />
+            <!--For images bigger than 35rem, for medium and large screens-->
+            <img
+              src="/09unit/images/city/citynight.jpg"
+              alt="Boston City Skyline at Night"
+              class="picture__fallbackImg"
+            />
+          </picture>
+          <a class="picture__sliderLink" href="#"
+            ><div class="picture__descDiv">
+              Boston Nightlife gets Revived with Inflush of Bar Licenses
+            </div></a
+          >
+        </div>
+        <div class="main__slide">
+          <picture class="picture">
+            <source
+              srcset="/09unit/images/bikes/artdirection.jpg"
+              media="(max-width: 28.75rem)"
+            />
+            <!--For images smaller then 28.75rem, art direction-->
+            <source
+              srcset="/09unit/images/bikes/bikes.jpg"
+              media="(min-width: 35rem)"
+            />
+            <!--For images bigger than 35rem, for medium and large screens-->
+            <img
+              src="/09unit/images/bikes/bikes.jpg"
+              alt="Boston City Bike Program"
+              class="picture__fallbackImg"
+            />
+          </picture>
+          <a class="picture__sliderLink" href="#">
+            <div class="picture__descDiv">
+              Mayor Announces New Ride-to-Work Program
             </div>
-            <div class="main__slide">
-                <picture class="picture">
-                    <source srcset="/09unit/images/bikes/artdirection.jpg" media="(max-width: 34.9rem)"> <!--For images smaller then 35rem, art direction-->
-                    <source srcset="/09unit/images/bikes/bikes.jpg" media="(min-width: 35rem)"> <!--For images bigger than 35rem, for medium and large screens-->
-                    <img src="/09unit/images/bikes/bikes.jpg" alt="Boston City Bike Program" class="picture__fallbackImg">
-                </picture> 
-                <div class="picture__descDiv">Mayor Announces New Ride-to-Work Program </div>
-
+          </a>
+        </div>
+        <div class="main__slide">
+          <picture class="picture">
+            <source
+              srcset="/09unit/images/fenway/artdirection.jpg"
+              media="(max-width: 28.75rem)"
+            />
+            <!--For images smaller then 28.75rem, art direction-->
+            <source
+              srcset="/09unit/images/fenway/fenway.jpg"
+              media="(min-width: 35rem)"
+            />
+            <!--For images bigger than 35rem, for medium and large screens-->
+            <img
+              src="/09unit/images/fenway/fenway.jpg"
+              alt="Fenway Stadium"
+              class="picture__fallbackImg"
+            />
+          </picture>
+          <a class="picture__sliderLink" href="#">
+            <div class="picture__descDiv">
+              Fenway Park Reopens After Rat Infestation
             </div>
-            <div class="main__slide">
-                <picture class="picture">
-                    <source srcset="/09unit/images/fenway/artdirection.jpg" media="(max-width: 34.9rem)"> <!--For images smaller then 35rem, art direction-->
-                    <source srcset="/09unit/images/fenway/fenway.jpg" media="(min-width: 35rem)"> <!--For images bigger than 35rem, for medium and large screens-->
-                    <img src="/09unit/images/fenway/fenway.jpg" alt="Fenway Stadium" class="picture__fallbackImg">
-                </picture> 
-                <div class="picture__descDiv"> Fenway Park Reopens After Rat Infestation</div>
+          </a>
+        </div>
+        <div class="main__slide">
+          <picture class="picture">
+            <source
+              srcset="/09unit/images/july/artdirection.jpg"
+              media="(max-width: 28.75rem)"
+            />
+            <!--For images smaller then 28.75rem, art direction-->
+            <source
+              srcset="/09unit/images/july/july4th.jpg"
+              media="(min-width: 35rem)"
+            />
+            <!--For images bigger than 35rem, for medium and large screens-->
+            <img
+              src="/09unit/images/july/july4th.jpg"
+              alt="Boston Fourth of July Events"
+              class="picture__fallbackImg"
+            />
+          </picture>
+          <a class="picture__sliderLink" href="#">
+            <div class="picture__descDiv">
+              Where to Watch the Boston July 4th Parade
             </div>
-            <div class="main__slide">
-                <picture class="picture">
-                    <source srcset="/09unit/images/july/artdirection.jpg" media="(max-width: 34.9rem)"> <!--For images smaller then 35rem, art direction-->
-                    <source srcset="/09unit/images/july/july4th.jpg" media="(min-width: 35rem)"> <!--For images bigger than 35rem, for medium and large screens-->
-                    <img src="/09unit/images/july/july4th.jpg" alt="Boston Fourth of July Events" class="picture__fallbackImg">
-                </picture> 
-                <div class="picture__descDiv">Where to Watch the Boston July 4th Parade</div>
+          </a>
+        </div>
+        <div class="main__slide">
+          <picture class="picture">
+            <source
+              srcset="/09unit/images/shopping/artdirection.jpg"
+              media="(max-width: 28.75rem)"
+            />
+            <!--For images smaller then 35rem, art direction-->
+            <source
+              srcset="/09unit/images/shopping/shopping.jpg"
+              media="(min-width: 35rem)"
+            />
+            <!--For images bigger than 28.75rem, for medium and large screens-->
+            <img
+              src="/09unit/images/shopping/shopping.jpg"
+              alt="The Boston Industrial Mill"
+              class="picture__fallbackImg"
+            />
+          </picture>
+          <a class="picture__sliderLink" href="#">
+            <div class="picture__descDiv">
+              Shopping District Zone Expansions
             </div>
-            <div class="main__slide">
-                <picture class="picture">
-                    <source srcset="/09unit/images/shopping/artdirection.jpg" media="(max-width: 34.9rem)"> <!--For images smaller then 35rem, art direction-->
-                    <source srcset="/09unit/images/shopping/shopping.jpg" media="(min-width: 35rem)"> <!--For images bigger than 35rem, for medium and large screens-->
-                    <img src="/09unit/images/shopping/shopping.jpg" alt="The Boston Industrial Mill" class="picture__fallbackImg">
-                </picture> 
-                <div class="picture__descDiv">Shopping District Zone Expansions</div>
-            </div>
-        </section>
-        <section>
-            <h2 class="main__pagetitle">Plan Your Visit</h2>
-            <div class="main__cards">
-            <div class="main__card"> <!--background image is in division tag-->
-                <a href="#" class="main__cardAnchor">
-                    <h3 class="main__cardTitle">Historical Tours</h3>
-                </a>
-            </div>
-            <div class="main__card">
-                <a href="#" class="main__cardAnchor">
-                    <h3 class="main__cardTitle">City Maps</h3>
-                </a> 
-            </div>
-            <div class="main__card">
-                <a href="#" class="main__cardAnchor">
-                    <h3 class="main__cardTitle">Transit</h3>
-                </a>
-            </div>
-            <div class="main__card">
-                <a href="#" class="main__cardAnchor">
-                    <h3 class="main__cardTitle">Free Activites</h3>
-                </a>
-            </div>
-            </div>
-        </section>
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2 class="main__pagetitle">Plan Your Visit</h2>
+        <div class="main__cards">
+          <div class="main__card">
+            <!--background image is in division tag-->
+            <a href="#" class="main__cardAnchor">
+              <i class="main__cardIcon fa-solid fa-landmark-dome"></i>
+              <h3 class="main__cardTitle">Historical Tours</h3>
+            </a>
+          </div>
+          <div class="main__card">
+            <a href="#" class="main__cardAnchor">
+              <i class="main__cardIcon fa-solid fa-tree-city"></i>
+              <h3 class="main__cardTitle">City Maps</h3>
+            </a>
+          </div>
+          <div class="main__card">
+            <a href="#" class="main__cardAnchor">
+              <i class="main__cardIcon fa-solid fa-bus"></i>
+              <h3 class="main__cardTitle">Transit</h3>
+            </a>
+          </div>
+          <div class="main__card">
+            <a href="#" class="main__cardAnchor">
+              <i class="main__cardIcon fa-solid fa-person-biking"></i>
+              <h3 class="main__cardTitle">Free Activites</h3>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer__copyright">
-            <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
-        </div>
-        <div class="footer__imgCiting">
-            <h4>Header Image</h4>
-            <p>Image by David Mark from Pixabay </p>
-            <h4>Slider Images</h4>
-            <p>https://www.pexels.com/photo/architectural-photography-of-red-and-brown-house-3397975/</p>
-            <p>https://www.pexels.com/photo/city-road-street-vehicle-7891010/</p>
-            <p>https://www.pexels.com/photo/city-street-field-building-8304432/</p>
-            <p>https://www.pexels.com/photo/city-restaurant-vacation-people-9292156/</p>
-            <p>https://unsplash.com/photos/NrDYqseeAxk</p>
-            <h4>Card Images</h4>
-            <p>https://unsplash.com/photos/lT2hiMUACco</p>
-            <p>https://unsplash.com/photos/1GHqOftzYo0</p>
-            <p>https://unsplash.com/photos/w8B_Hx077-4</p>
-            <p>https://unsplash.com/photos/xJueGJJHnWs</p>
-        </div>
+      <div class="footer__copyright">
+        <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
+      </div>
+      <div class="footer__imgCiting">
+        <h4>Header Image</h4>
+        <p>Image by David Mark from Pixabay</p>
+        <h4>Slider Images</h4>
+        <p>
+          https://www.pexels.com/photo/architectural-photography-of-red-and-brown-house-3397975/
+        </p>
+        <p>https://www.pexels.com/photo/city-road-street-vehicle-7891010/</p>
+        <p>https://www.pexels.com/photo/city-street-field-building-8304432/</p>
+        <p>
+          https://www.pexels.com/photo/city-restaurant-vacation-people-9292156/
+        </p>
+        <p>https://unsplash.com/photos/NrDYqseeAxk</p>
+        <h4>Card Images</h4>
+        <p>https://unsplash.com/photos/lT2hiMUACco</p>
+        <p>https://unsplash.com/photos/1GHqOftzYo0</p>
+        <p>https://unsplash.com/photos/w8B_Hx077-4</p>
+        <p>https://unsplash.com/photos/xJueGJJHnWs</p>
+      </div>
     </footer>
     <script src="/09unit/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('.main__slider').slick ({
-                dots: true,
-                arrows: false,
-                infinite: true,
-                cssEase: 'ease-in',
-                autoplay: true
-            })
-        })
+      $(document).ready(function () {
+        $(".main__slider").slick({
+          dots: true,
+          arrows: false,
+          infinite: true,
+          cssEase: "ease-in",
+          autoplay: true,
+        });
+      });
     </script>
     <script type="text/javascript" src="/09unit/slick/slick.min.js"></script>
-</body>
+  </body>
 </html>
