@@ -201,16 +201,16 @@ nav {
 
 //Color for cards
 .main__card:nth-child(1) a {
-    background-color: lighten($sliderHighlight, 60%);
-}
-.main__card:nth-child(2) a {
     background-color: lighten($sliderHighlight, 40%);
 }
-.main__card:nth-child(3) a {
+.main__card:nth-child(2) a {
     background-color: lighten($sliderHighlight, 30%);
 }
-.main__card:nth-child(4) a {
+.main__card:nth-child(3) a {
     background-color: lighten($sliderHighlight, 20%);
+}
+.main__card:nth-child(4) a {
+    background-color: lighten($sliderHighlight, 10%);
 }
 //Transition activated by hover
 .main__card .main__cardAnchor:hover {
