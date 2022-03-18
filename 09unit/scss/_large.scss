@@ -1,0 +1,20 @@
+.header {
+    padding: 4rem 0 1rem 1.5rem;
+
+    height: 30vw;
+
+    //increased font size for medium screens
+    .header__company {
+        font-size: 4rem; 
+    }
+    .header__slogan {
+        font-size: 1rem;
+    }
+}
+
+.main__pagetitle {
+    font-size: 1.8rem;
+}
+.main__card {
+    flex-basis: 25%;
+}

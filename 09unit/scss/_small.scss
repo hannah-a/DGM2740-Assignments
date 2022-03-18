@@ -22,37 +22,96 @@
 }
 
 .header {
-    padding: .8rem;
-    height: clamp(20vw, 30vw, 20vw);
+    padding: 1rem 0 1rem 1.5rem;
+    height: clamp(25vw, 30vw, 20vw);
 
     background-image: url(/09unit/images/headerbackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: white;
+    color: $headerColor;
+    clip-path: polygon(0 93%, 12% 84%, 24% 81%, 39% 82%, 49% 88%, 62% 95%, 76% 95%, 90% 95%, 100% 91%, 100% 1%, 0 0);
     
     font-family: 'Alegreya Sans SC', sans-serif;
     .header__company {
         font-size: 2rem;
     }
+    .header__slogan {
+        font-size: .8rem;
+
+    }
 }
 
 nav {
     .nav__hamburger {
-        font-size: 40px;
+        padding: .5rem 0 .8rem 1rem;
+
+        font-size: 2rem;
     }
-  
 }
 .ul {
     position: absolute;
     z-index: 1;
+
+    //moves navigation over to match hamburger
+    padding: 0 4rem 1rem 1rem;
+
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    border-left: 5px solid $sliderHighlight;
 }
+
+.ul__exploreUl { //Sub navigation menu
+    margin-top: .5rem;
+}
+
+//Main navigation
+.ul__li {
+    padding: .5rem 0;  
+       
+}
+
+.ul__anchor { //Main navigation anchors
+    text-decoration: none;
+    color: black;
+}
+
+.ul__anchor:hover {
+    color: $sliderHighlight;
+    font-weight: 800;
+}
+
+//Subnavigation
+.ul__exploreIcon {
+    padding: .5rem;
+
+    font-size: 1.5rem;
+}
+
+.ul__exploreList {
+    padding-bottom: .5rem;
+}
+.ul__subanchor {
+    padding: 1rem;
+
+    font-size: .8rem;
+    text-decoration: none;
+    color: black;
+}
+.ul__subanchor:hover {
+    color: $sliderHighlight;
+    font-weight: 800;
+}
+
+//Menu closed classes
 .ul--closed {
     display: none;
+    transition: all ease-in-out 1s;
 }
   
 .ul__exploreUl--closed {
     display: none;
+    transition: all ease-in-out 1s;
 }
 
 
@@ -62,15 +121,65 @@ nav {
 //picture in the slider and description
 .picture {position: relative};
 .picture__descDiv {
-    color: black;
     position: absolute;
-    bottom: 0; //allows both elements to match at the bottom
+    bottom: 4rem; //allows both elements to overlay
+
+    max-width: 80vw; //fits slider text on smaller screens
+    padding: 2rem 5rem 2rem 1rem;
+
+
+    border-radius: 0 60px 60px 0;
+    border-left: 10px solid $sliderHighlight;
+
+    font-weight: 600;
+    letter-spacing: .05rem;
+    line-height: 1.5rem;
+
+    color: $sliderText;
+    background-color: $sliderBackground;
+    
 }
 
-
+//Div of all cards
+.main__pagetitle {
+    margin: 3rem 0 1rem 1rem;
+}
 .main__cards {
     display: flex;
     flex-wrap: wrap;
+}
+
+//Each card
+.main__card {
+    width: 100%; 
+    display: flex;
+
+    //Properties for the images
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+//Setting width of anchors for grid
+.main__cardAnchor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 30vh;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+    transition: all .5s ease-in;
+}
+
+.main__cardIcon {
+    width: 80px;
+    height: 80px;
+    font-size: 4rem;
 }
 
 
@@ -88,30 +197,43 @@ nav {
     background-image: url("/09unit/images/squarelibrary/mediumsquare.jpg");
 }
 
-//Setting width of anchors for grid
-.main__cardAnchor {
-    display: block;
-    height: 300px;
-    transition: all .5s ease-in;
-}
+
 
 //Color for cards
 .main__card:nth-child(1) a {
-    background-color: white;
+    background-color: lighten($sliderHighlight, 60%);
 }
 .main__card:nth-child(2) a {
-    background-color: white;
+    background-color: lighten($sliderHighlight, 40%);
 }
 .main__card:nth-child(3) a {
-    background-color: white;
+    background-color: lighten($sliderHighlight, 30%);
 }
 .main__card:nth-child(4) a {
-    background-color: white;
+    background-color: lighten($sliderHighlight, 20%);
 }
 //Transition activated by hover
-.main__card a:hover {
+.main__card .main__cardAnchor:hover {
     background: none;
     text-shadow: 0 0 4px black; 
 }
 
-//28, 58, 75; 448px, 928px, 1200px; 449px, 464px, 300px;
+//Footer 
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+.footer__copyright {
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: center;
+}
+.footer__imgCiting {
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    background-color: rgb(214, 187, 221);
+    border-bottom: 10px solid $sliderHighlight;
+
+    font-size: .8rem;
+}
