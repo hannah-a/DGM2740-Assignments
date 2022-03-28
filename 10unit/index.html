@@ -6,134 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/10unit/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <title>Witches Wearables</title>
 </head>
 
 <body class="body">
-    <div class="headerWrapper">
-        <header class="header">
-            <figure class="header__figureLogo">
-                <img class="header__img" src="/10unit/images/logo.svg" alt="Witches Wearables">
-            </figure>
-        </header>
-        <nav class="nav">
-            <ul class="nav__ul">
-                <li class="ul__li"><a class="nav__anchor" href="#">Hats</a></li>
-                <li class="ul__li"><a class="nav__anchor" href="#">Broomsticks</a></li>
-                <li class="ul__li"><a class="nav__anchor" href="#">Potions</a></li>
-                <li class="ul__li"><a class="nav__anchor" href="#">Secondhand</a></li>
-                <li class="ul__li">Witch Wiki
-                    <ul class="sub__ul">
-                        <li class="sub__li"><a class="sub__anchor" href="#">Astrology</a></li>
-                        <li class="sub__li"><a class="sub__anchor" href="#">Wart Removal</a></li>
-                        <li class="sub__li"><a class="sub__anchor" href="#">Find a Cat</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <main class="main">
-        <div class="main__flex">
-            <div class="main__item">
-                <h2>Hexed Hat</h2>
-                <img src="/10unit/images/witchhat.jpg" alt="Girl with witches hat">
-            </div>
-            <div class="main__forms">
-                <form class="main__form" method="get" action="/10unit/thanks.html">
-                    <fieldset class="main__fieldset">
-                        <legend class="main__legend">Bulk Order</legend>
-                        <label class="forms__customize main__formLable">
-                            <div class="forms__inputTitle">Date Needed</div>
-                            <input class="forms__input" type="date" name="date"></input>
-                        </label>
-                        <label class="forms__customize main__formLable">
-                            <div class="forms__inputTitle">Business Name</div>
-                            <input class="forms__input" type="text" name="businessName"></input>
-                        </label>
-                        <label class="forms__customize main__formLable">
-                            <div class="forms__inputTitle">Business Website</div>
-                            <input class="forms__input" type="url" name="url" placeholder="http://"></input>
-                        </label>
-                        <div class="forms__inputTitle">Color</div>
-                        <div class="forms__divColors">
-                            <!-- <select name="color" class="forms__select"> -->
-                            <label>
-                                <div class="forms__colorDiv" id="blackDiv"></div>
-                                <div class="forms__optionTitle">Black</div>
-                                <input class="forms__selectOption" value="black" type="radio" name="colors">
-                                </input>
+    <div class="body__wrapper">
+        <div class="headerWrapper">
+            <header class="header">
+                <figure class="header__figureLogo">
+                    <img class="header__img" src="/10unit/images/witcheswearableslogo.svg" alt="Witches Wearables">
+                </figure>
+                <button class="header__hamburger">
+                    <span class="header__spanHamburger">&#9776;</span>
+                    <span class="header__spanX">X</span>
+                </button>
+            </header>
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li class="ul__li active"><a class="nav__anchor" href="#">Hats</a></li>
+                    <li class="ul__li"><a class="nav__anchor" href="#">Broomsticks</a></li>
+                    <li class="ul__li"><a class="nav__anchor" href="#">Potions</a></li>
+                    <li class="ul__li"><a class="nav__anchor" href="#">Secondhand</a></li>
+                    <li class="ul__li ul__witch">Witch Wiki
+                        <ul class="sub__ul">
+                            <li class="sub__li"><a class="sub__anchor" href="#">Astrology</a></li>
+                            <li class="sub__li"><a class="sub__anchor" href="#">Wart Removal</a></li>
+                            <li class="sub__li"><a class="sub__anchor" href="#">Find a Cat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main">
+            <div class="main__flex">
+                <div class="main__item">
+                    <h2>Hexed Hat</h2>
+                    <figure class="main__figureHat">
+                        <img src="/10unit/images/witchhat.svg" alt="Girl with witches hat">
+                    </figure>
+                </div>
+                <div class="main__forms">
+                    <form class="main__form" method="get" action="/10unit/thanks.html">
+                        <fieldset class="main__fieldset">
+                            <legend class="main__legend">Bulk Order</legend>
+                            <label class="forms__customize main__formLable">
+                                <div class="forms__inputTitle">Date Needed</div>
+                                <input class="forms__input" type="date" name="date"></input>
                             </label>
-                            <label>
-                                <div class="forms__colorDiv" id="brownDiv"></div>
-                                <div class="forms__optionTitle">Brown</div>
-                                <input class="forms__selectOption" value="Brown" type="radio" name="colors">
-                                </input>
+                            <label class="forms__customize main__formLable">
+                                <div class="forms__inputTitle">Business Name</div>
+                                <input class="forms__input" type="text" name="businessName"></input>
                             </label>
-                            <label>
-                                <div class="forms__colorDiv" id="greyDiv"></div>
-                                <div class="forms__optionTitle">Grey</div>
-                                <input class="forms__selectOption" value="Brown" type="radio" name="colors">
-                                </input>
+                            <label class="forms__customize main__formLable">
+                                <div class="forms__inputTitle">Business Website</div>
+                                <input class="forms__input" type="url" name="url" placeholder="http://"></input>
                             </label>
-                            <!-- </select> -->
-                        </div>
-                        <label class="forms__customize main__formLable">
-                            <div class="forms__inputTitle">Quantity</div>
-                            <input class="forms__input" type="text" name="quanity"></input>
-                        </label>
-                        <div class="forms__inputTitle">Material</div>
-                        <label class="forms__customize main__formLable">
-                            <input class="forms__input" type="radio" name="material">Wool</input>
-                        </label>
-                        <label class="forms__customize main__formLable">
-                            <input class="forms__input" type="radio" name="material">Fire-Resistant Cotton</input>
-                        </label>
+                            <div class="forms__inputTitle">Color</div>
+                            <div class="forms__divColors">
+                                <!-- <select name="color" class="forms__select"> -->
+                                <label>
+                                    <div class="forms__colorDiv" id="blackDiv"></div>
+                                    <div class="forms__optionTitle">Black</div>
+                                    <input class="forms__selectOption" value="black" type="radio" name="colors">
+                                    </input>
+                                </label>
+                                <label>
+                                    <div class="forms__colorDiv" id="brownDiv"></div>
+                                    <div class="forms__optionTitle">Brown</div>
+                                    <input class="forms__selectOption" value="Brown" type="radio" name="colors">
+                                    </input>
+                                </label>
+                                <label>
+                                    <div class="forms__colorDiv" id="greyDiv"></div>
+                                    <div class="forms__optionTitle">Grey</div>
+                                    <input class="forms__selectOption" value="Brown" type="radio" name="colors">
+                                    </input>
+                                </label>
+                                <!-- </select> -->
+                            </div>
+                            <label class="forms__customize main__formLable">
+                                <div class="forms__inputTitle">Quantity</div>
+                                <input class="forms__input" type="text" name="quanity"></input>
+                            </label>
+                            <div class="forms__inputTitle">Material</div>
+                            <label class="forms__customize main__formLable">
+                                <input class="forms__input" type="radio" name="material">Wool</input>
+                            </label>
+                            <label class="forms__customize main__formLable">
+                                <input class="forms__input" type="radio" name="material">Fire-Resistant Cotton</input>
+                            </label>
 
-                    </fieldset>
-                    <fieldset class="main__fieldset fieldset__customerInfo">
-                        <legend class="main__legend">Customer Info</legend>
-                        <label class="forms__customerInfo main__formLable">
-                            <div class="forms__inputTitle">Name*</div>
-                            <input class="forms__input" type="text" name="name" required></input>
-                        </label>
-                        <label class="forms__customerInfo main__formLable">
-                            <div class="forms__inputTitle">Phone Number*</div>
-                            <input class="forms__input" type="tel" name="phone" placeholder="3849999999"></input>
-                        </label>
-                        <label class="forms__customerInfo main__formLable">
-                            <div class="forms__inputTitle">Email*</div>
-                            <input class="forms__input" type="email" name="email" required></input>
-                        </label>
-                    </fieldset>
-                    <fieldset class="main__fieldset">
-                        <legend class="main__legend">Payment Info</legend>
-                        <label class="forms__paymentInfo main__formLable">
-                            <div class="forms__inputTitle">Name on Card*</div>
-                            <input class="forms__input" type="text" name="cardname" required></input>
-                        </label>
-                        <label class="forms__paymentInfo main__formLable">
-                            <div class="forms__inputTitle">Card Number*</div>
-                            <input class="forms__input" type="number" name="cardnumber" required></input>
-                        </label>
-                        <label class="forms__paymentInfo main__formLable">
-                            <div class="forms__inputTitle">Expiration*</div>
-                            <input class="forms__input" type="date" name="expiration" required></input>
-                        </label>
-                    </fieldset>
-                    <input class="form__submitButton" type="submit" value="Buy Witches Wearables">
-                </form>
+                        </fieldset>
+                        <fieldset class="main__fieldset fieldset__customerInfo">
+                            <legend class="main__legend">Customer Info</legend>
+                            <label class="forms__customerInfo main__formLable">
+                                <div class="forms__inputTitle">Name*</div>
+                                <input class="forms__input" type="text" name="name" required></input>
+                            </label>
+                            <label class="forms__customerInfo main__formLable">
+                                <div class="forms__inputTitle">Phone Number*</div>
+                                <input class="forms__input" type="tel" name="phone" placeholder="3849999999"></input>
+                            </label>
+                            <label class="forms__customerInfo main__formLable">
+                                <div class="forms__inputTitle">Email*</div>
+                                <input class="forms__input" type="email" name="email" required></input>
+                            </label>
+                        </fieldset>
+                        <fieldset class="main__fieldset">
+                            <legend class="main__legend">Payment Info</legend>
+                            <label class="forms__paymentInfo main__formLable">
+                                <div class="forms__inputTitle">Name on Card*</div>
+                                <input class="forms__input" type="text" name="cardname" required></input>
+                            </label>
+                            <label class="forms__paymentInfo main__formLable">
+                                <div class="forms__inputTitle">Card Number*</div>
+                                <input class="forms__input" type="number" name="cardnumber" required></input>
+                            </label>
+                            <label class="forms__paymentInfo main__formLable">
+                                <div class="forms__inputTitle">Expiration*</div>
+                                <input class="forms__input" type="date" name="expiration" required></input>
+                            </label>
+                        </fieldset>
+                        <input class="form__submitButton" type="submit" value="Buy Witches Wearables">
+                    </form>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__hannahInfo">
-            <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
-        </div>
-        <div class="footer__imageCiting">
-            <p>Photo by Hebert Santo: https://www.pexels.com/photo/landscape-sunset-love-people-9708452/</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+        </main>
+        <footer class="footer">
+            <div class="footer__hannahInfo">
+                <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
+            </div>
+            <div class="footer__imageCiting">
+                <p>Photo by Hebert Santo: https://www.pexels.com/photo/landscape-sunset-love-people-9708452/</p>
+                <p>Image by <a
+                        href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1295801">OpenClipart-Vectors</a>
+                    from <a
+                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1295801">Pixabay</a>
+                </p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </div>
 </body>
 
 </html>

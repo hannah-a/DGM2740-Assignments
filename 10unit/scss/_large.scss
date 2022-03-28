@@ -1,0 +1,14 @@
+.header__hamburger {
+  display: none;
+}
+.nav {
+  position: static;
+  transform: translate3d(0, 0, 0);
+  width: auto;
+  .nav__ul {
+    display: flex;
+    margin-left: 2%;
+    border-left: 1px solid grey;
+
+  }
+}
