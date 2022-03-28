@@ -31,6 +31,7 @@
                     <li class="ul__li"><a class="nav__anchor" href="#">Broomsticks</a></li>
                     <li class="ul__li"><a class="nav__anchor" href="#">Potions</a></li>
                     <li class="ul__li"><a class="nav__anchor" href="#">Secondhand</a></li>
+                    <div>
                     <li class="ul__li ul__witch">Witch Wiki
                         <ul class="sub__ul">
                             <li class="sub__li"><a class="sub__anchor" href="#">Astrology</a></li>
@@ -38,15 +39,16 @@
                             <li class="sub__li"><a class="sub__anchor" href="#">Find a Cat</a></li>
                         </ul>
                     </li>
+                    </div>
                 </ul>
             </nav>
         </div>
         <main class="main">
             <div class="main__flex">
                 <div class="main__item">
-                    <h2>Hexed Hat</h2>
+                    <h2 class="main__itemTitle">Hexed Hat</h2>
                     <figure class="main__figureHat">
-                        <img src="/10unit/images/witchhat.svg" alt="Girl with witches hat">
+                        <img class="main__imageHat" src="/10unit/images/witchhat.svg" alt="Girl with witches hat">
                     </figure>
                 </div>
                 <div class="main__forms">
@@ -65,22 +67,22 @@
                                 <div class="forms__inputTitle">Business Website</div>
                                 <input class="forms__input" type="url" name="url" placeholder="http://"></input>
                             </label>
-                            <div class="forms__inputTitle">Color</div>
+                            <div class="forms__divTitle">Color</div>
                             <div class="forms__divColors">
                                 <!-- <select name="color" class="forms__select"> -->
-                                <label>
+                                <label class="forms__label">
                                     <div class="forms__colorDiv" id="blackDiv"></div>
                                     <div class="forms__optionTitle">Black</div>
                                     <input class="forms__selectOption" value="black" type="radio" name="colors">
                                     </input>
                                 </label>
-                                <label>
+                                <label class="forms__label">
                                     <div class="forms__colorDiv" id="brownDiv"></div>
                                     <div class="forms__optionTitle">Brown</div>
                                     <input class="forms__selectOption" value="Brown" type="radio" name="colors">
                                     </input>
                                 </label>
-                                <label>
+                                <label class="forms__label">
                                     <div class="forms__colorDiv" id="greyDiv"></div>
                                     <div class="forms__optionTitle">Grey</div>
                                     <input class="forms__selectOption" value="Brown" type="radio" name="colors">
@@ -88,18 +90,19 @@
                                 </label>
                                 <!-- </select> -->
                             </div>
+                            <div class="forms__quanityDiv">
                             <label class="forms__customize main__formLable">
                                 <div class="forms__inputTitle">Quantity</div>
-                                <input class="forms__input" type="text" name="quanity"></input>
+                                <input class="forms__input" type="number" name="quanity"></input>
                             </label>
                             <div class="forms__inputTitle">Material</div>
-                            <label class="forms__customize main__formLable">
-                                <input class="forms__input" type="radio" name="material">Wool</input>
+                            <label class="forms__materialFlex">
+                                <input class="forms_pradio" type="radio" name="material"></input><p>Wool</p>
                             </label>
-                            <label class="forms__customize main__formLable">
-                                <input class="forms__input" type="radio" name="material">Fire-Resistant Cotton</input>
+                            <label class="forms__materialFlex">
+                                <input  class="forms_pradio"type="radio" name="material"><p>Fire-Resistant Cotton</p></input>
                             </label>
-
+                            </div>
                         </fieldset>
                         <fieldset class="main__fieldset fieldset__customerInfo">
                             <legend class="main__legend">Customer Info</legend>
@@ -124,14 +127,14 @@
                             </label>
                             <label class="forms__paymentInfo main__formLable">
                                 <div class="forms__inputTitle">Card Number*</div>
-                                <input class="forms__input" type="number" name="cardnumber" required></input>
+                                <input class="forms__input" type="text" name="cardnumber" required></input>
                             </label>
                             <label class="forms__paymentInfo main__formLable">
                                 <div class="forms__inputTitle">Expiration*</div>
                                 <input class="forms__input" type="date" name="expiration" required></input>
                             </label>
                         </fieldset>
-                        <input class="form__submitButton" type="submit" value="Buy Witches Wearables">
+                        <input class="form__submitButton" type="submit" value="Buy Witch Hat">
                     </form>
                 </div>
             </div>

@@ -20,25 +20,40 @@ html {
 .header {
     display: grid;
     grid-template-columns: 75vw auto;
-    align-items: center;    
-    padding: .5rem 2vw;
-    
+    align-items: center;
+    padding: 1rem 2vw;
+
+    .header__figureLogo {
+        max-width: 682px;
+    }
     button {
         align-self: start;
-        margin: 0;
-        border: none;
-        
+        margin: 0;     
     }
 }
 
 // hamburger open
 .body__wrapper  {
-        transition: transform .5s ease;
+    transition: transform .5s ease;
+
+    .header__hamburger {
+        margin: auto;
+
+        background-color: white;
+
+        border: none;
+    }
     .header__spanHamburger {
         display: block;
+
+        font-size: 2rem;
     }
     .header__spanX {
         display: none;
+
+        font-size: 2rem;
+
+        background-color: none;
     }  
 }
 
@@ -71,9 +86,34 @@ html {
         text-decoration: none;
         color: white;
     }
+    .ul__li {
+        padding: 1rem;
+        
+    }
+    .ul__li:hover {
+        background-color: rgb(92, 92, 92);
+
+        text-shadow: 3px 3px 5px black;
+    }
+    .ul__li.active {
+        background-color: rgb(92, 92, 92);
+        
+        text-shadow: 3px 3px 5px black;
+    }
     .ul__witch {
         .sub__ul {
             display: none;
+            padding-bottom: .5rem;
+
+            .sub__li {
+                padding: .5rem 0 0 1rem;
+            }
+            .sub__anchor {
+                text-decoration: none;
+
+                font-size: .8rem;
+                color: white;
+            }
         }
     }
     .ul__witch:hover {
@@ -84,15 +124,142 @@ html {
 }
 .main__flex {
     display: flex;
+    justify-content: space-between;
+}
+
+.main__item {
+    max-width: 50%;
+    .main__itemTitle {
+        
+
+        margin: 2rem;
+
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+    .main__figureHat {
+        .main__imageHat {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.main__forms {
+    width: 100%;
+    padding: 0 0 0 2rem;
 }
 .main__fieldset {
-    border: 5px solid grey;
+    margin: 1rem;
+    padding: 1rem;
+
+    background-color: rgb(228, 228, 228);
+    .main__legend {
+        padding: .8rem;
+
+        background-color: black;
+        border-radius: 20px;
+
+        font-size: 1.2rem;
+        color: white;
+    }
+    .forms__inputTitle {
+        padding: .5rem 0 .2rem 0;
+
+        font-size: .8rem;
+    }
+   
+    .forms__divTitle {
+        padding: 1rem 0;
+
+    }
+    .forms__divColors {
+        display: flex;
+        .forms__label {
+            margin: 1rem;
+
+            text-align: center;
+        }
+        .forms__colorDiv {
+            width: 50px;
+            height: 50px;
+
+            padding: 1rem; 
+
+            border-radius: 50%;
+        }
+        #blackDiv {
+            background-color: black;
+        }
+        #brownDiv {
+            background-color: rgb(75, 35, 19);
+        }
+        #greyDiv {
+            background-color: rgb(73, 73, 73);
+        }
+    }
+}
+.forms__input {
+    width: 75%;
+    padding: .4rem;
+}
+.forms__input:required {
+    border: none;
+    border-bottom: 2px solid $required;
+}
+.forms__input:required:valid {
+    border-bottom: 2px solid $valid;
+}
+.forms__quanityDiv{
+    margin: 0;
+    padding: 0;
+}
+.forms__materialFlex {
+    display: flex;
+    font-size: .8rem;
+    p {
+        padding-top: .3rem;
+    }
+}
+.form__submitButton {
     margin: 1rem;
     
+    padding: 2rem;
+
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Lora', serif;
+    color: white;
+}
+.form__submitButton:hover {
+    background-color: rgb(48, 48, 48);
 }
 
 
 
+.footer {
+    margin-top: 5rem;
+    padding: 3rem;
+
+    background-color: rgb(61, 61, 61);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.main__h1Thanks {
+    font-size: 2rem;
+    margin: 3rem;
+}
+.main__thanks {
+    height: 80vh;
+}
 // input:required:valid {
 //     does stuff
 // }

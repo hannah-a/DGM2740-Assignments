@@ -8,7 +8,18 @@
   .nav__ul {
     display: flex;
     margin-left: 2%;
-    border-left: 1px solid grey;
-
+  }
+  .ul__li {
+    padding: 1rem;
+  }
+  .ul__witch {
+    position: absolute;
+    .sub__ul {
+        padding: 0;
+        .sub__li {
+            padding: .5rem 0;
+        }
+    }
+    
   }
 }
