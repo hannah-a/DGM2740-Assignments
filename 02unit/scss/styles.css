@@ -1,0 +1,278 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+header, nav, main, footer {
+  max-width: 75rem;
+  margin: auto;
+}
+
+#headWrapper {
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(#020024));
+  background: linear-gradient(0deg, black 0%, #020024 100%);
+  border-bottom: 5px solid #060525;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  letter-spacing: .1rem;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-top: 2.7rem;
+}
+
+header h2 {
+  display: none;
+  font-style: italic;
+  padding-top: .5rem;
+}
+
+.navWrapper {
+  border-bottom: 5px solid #060525;
+}
+
+nav ul li {
+  padding: 1rem;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #060525, black);
+  font-weight: 700;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+nav ul li.active {
+  background: #040329;
+}
+
+nav ul li.active a {
+  color: white;
+}
+
+nav ul li:hover {
+  background: #040329;
+}
+
+nav ul li:hover a {
+  color: white;
+}
+
+#mainWrapper {
+  background: black;
+}
+
+main {
+  background: white;
+  padding-bottom: 6rem;
+}
+
+main h1 {
+  background: #060525;
+  padding: 2rem 1rem;
+  font-size: 1.8rem;
+  color: white;
+  position: relative;
+  bottom: 20px;
+}
+
+main figure {
+  float: right;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+main figure img {
+  width: 100%;
+}
+
+main figure figcaption {
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+main p {
+  padding: 0 1rem;
+  line-height: 1.3rem;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+#footerWrapper {
+  background: #060525;
+}
+
+footer {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (min-width: 35rem) {
+  header h2 {
+    display: block;
+  }
+  header h1 {
+    padding-top: 2rem;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 1rem;
+  }
+  nav ul li {
+    border: none;
+  }
+  main figure {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main figure {
+    width: 33%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

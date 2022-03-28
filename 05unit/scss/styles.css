@@ -1,0 +1,288 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+main {
+  width: 100%;
+}
+
+nav, header, main, footer {
+  max-width: 75rem;
+  margin: 1rem auto;
+}
+
+header {
+  color: #740202;
+  font-family: "Allura", cursive;
+  padding: 1rem;
+  background-color: white;
+}
+
+header figure.logo {
+  float: left;
+  margin: 0 2% 0 0;
+}
+
+header figure.logo img {
+  width: 100%;
+  height: auto;
+}
+
+header #h1-m {
+  font-size: 2rem;
+}
+
+header #h1-d {
+  font-size: 1.5rem;
+}
+
+header #h1-z {
+  font-size: 2rem;
+}
+
+header h2 {
+  font-family: 'IBM Plex Serif', serif;
+  color: grey;
+  font-size: .8rem;
+}
+
+nav {
+  padding: 1rem;
+  background-color: #fedddd;
+}
+
+nav ul {
+  display: none;
+  padding-top: .5rem;
+}
+
+nav ul li {
+  margin: .5rem;
+  border-radius: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  display: block;
+  padding: .5rem;
+}
+
+nav ul li:hover {
+  background-color: #feaaaa;
+  cursor: pointer;
+}
+
+nav ul li.active {
+  background-color: #feaaaa;
+}
+
+nav button {
+  background-color: white;
+  border: none;
+  -webkit-box-shadow: 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px grey;
+  cursor: pointer;
+  margin: 0 0 0 .5rem;
+  padding: .5rem .8rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+nav button:hover {
+  background-color: white;
+}
+
+ul.open {
+  display: block;
+}
+
+button span:nth-child(1) {
+  display: block;
+}
+
+button span:nth-child(2) {
+  display: none;
+}
+
+button.open span:nth-child(1) {
+  display: none;
+}
+
+button.open span:nth-child(2) {
+  display: block;
+}
+
+.heroimg picture img {
+  width: 100%;
+  height: auto;
+}
+
+.founder {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.founder .flexDiv {
+  width: 100%;
+}
+
+.founder .flexDiv .founderdiv {
+  padding: 1rem;
+}
+
+.founder .flexDiv .founderdiv h2 {
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  color: #131313;
+}
+
+.founder .flexDiv .founderdiv p {
+  padding-top: 1rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+  line-height: 120%;
+}
+
+.founder .flexDiv figure.founderphoto {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+
+footer {
+  padding: 2rem;
+  background-color: #fedddd;
+  color: #740202;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 35rem) {
+  nav, nav ul, nav ul.open {
+    display: block;
+  }
+  #ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: .2rem;
+  }
+  button {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

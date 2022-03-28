@@ -1,0 +1,285 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
+header, nav, main, footer {
+  max-width: 71.25rem;
+  margin: auto;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px auto;
+      grid-template-columns: 100px auto;
+  font-family: "Mukta", san-serif;
+  padding: 1rem;
+}
+
+header div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin: auto;
+}
+
+header div h1 {
+  font-size: 1.3rem;
+}
+
+header div h2 {
+  font-family: "Mukta", san-serif;
+  font-weight: 300;
+  margin-top: .5rem;
+  font-size: .8rem;
+}
+
+nav ul {
+  margin-top: 1.3rem;
+  background: #ff9c9c;
+}
+
+nav ul li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+nav ul li:hover {
+  background: #9c0000;
+  color: #ffe4e4;
+}
+
+nav ul li.active {
+  background: #9c0000;
+  color: #ffe4e4;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+main h1 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+main div {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main div figure {
+  margin: 1rem 1rem 1rem 0;
+}
+
+main div figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+main div figure figcaption {
+  margin-top: .5rem;
+  padding: .5rem;
+  line-height: 1.5rem;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, rgba(255, 255, 255, 0.933764)), to(rgba(195, 34, 34, 0.256866)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.933764) 1%, rgba(195, 34, 34, 0.256866) 100%);
+  border-radius: 5px;
+}
+
+footer {
+  background: #00a800;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (min-width: 25.875rem) {
+  header div {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: auto 1.5rem;
+  }
+  header div h1 {
+    font-size: 2rem;
+  }
+  header div h2 {
+    font-family: "Mukta", san-serif;
+    font-weight: 300;
+    margin-top: .5rem;
+    font-size: 1rem;
+  }
+  main div figure {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+@media only screen and (min-width: 35rem) {
+  header div {
+    margin: auto 2rem;
+  }
+  header div h1 {
+    font-size: 2.5rem;
+  }
+  header div h2 {
+    font-size: 1.3rem;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main div figure {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media only screen and (min-width: 70rem) {
+  header div h1 {
+    font-size: 2.5rem;
+  }
+  header div h2 {
+    font-size: 1.2rem;
+  }
+  nav ul li {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  main div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main div figure {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
