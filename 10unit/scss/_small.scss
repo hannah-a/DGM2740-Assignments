@@ -38,7 +38,6 @@ html {
 
     .header__hamburger {
         margin: auto;
-
         background-color: white;
 
         border: none;
@@ -125,16 +124,22 @@ html {
 .main__flex {
     display: flex;
     justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
 }
 
 .main__item {
     max-width: 50%;
+    margin: 0 auto;
     .main__itemTitle {
-        
-
-        margin: 2rem;
+        width: 100%;
+        margin: 2rem 0;
+        padding-bottom: .2rem;
 
         font-size: clamp(1.5rem, 3vw, 2rem);
+        text-align: center;
+
+        border-bottom: 2px solid grey;
     }
     .main__figureHat {
         .main__imageHat {
@@ -145,7 +150,6 @@ html {
 }
 .main__forms {
     width: 100%;
-    padding: 0 0 0 2rem;
 }
 .main__fieldset {
     margin: 1rem;
