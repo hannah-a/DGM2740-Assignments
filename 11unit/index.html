@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,54 @@
     <link href="/css/styles.css" rel="stylesheet">
     <title>Tech Watch</title>
 </head>
-<body>
-    <header>
-        <nav>
 
+<body class="body">
+    <div class="pageWrapper">
+        <header class="header">
+            <img class="header__logoImg" src="/images/logo.svg" alt="Tech Watch Logo">
+        </header>
+        <nav class="nav">
+            <div id="myLinks" class="nav__button"><a href="#hamburger">X</a></div>
+            <ul class="ul">
+                <li class="ul__li"><a href="#" class="ul__liAnchor">Displays</a></li>
+                <li class="ul__li active"><a href="#" class="ul__liAnchor">Audio</a></li>
+                <li class="ul__li"><a href="#" class="ul__liAnchor">Video</a></li>
+                <li class="ul__li"><a href="#" class="ul__liAnchor">New Products</a></li>
+                <li class="ul__li"><a href="#" class="ul__liAnchor">Auto</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
+        <main class="main">
 
-    </main>
-    <footer>
-        <div class="hannahInfo">
-            <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
-        </div>
-        <div class="imageCiting">
-        </div>
-    </footer>
-<script src="script.js"></script>
+        </main>
+        <footer class="footer">
+            <div class="hannahInfo">
+                <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
+            </div>
+            <div class="imageCiting">
+            </div>
+        </footer>
+        <div id="hamburger" class="hamburger nav__button"><a href="#myLinks">&#9776;</a></div>
+    </div>
+    <script type="application/ld+json">
+        {
+        "@context":"https://schema.org",
+        "@type":"localBusiness",
+        "image":"https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885__480.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&tbnid=DH7p1w2o_fIU8M&vet=12ahUKEwj_9YvxiIP3AhXzAZ0JHfVRDh4QMygCegUIARDeAQ..i&docid=Ba_eiczVaD9-zM&w=771&h=480&q=image&ved=2ahUKEwj_9YvxiIP3AhXzAZ0JHfVRDh4QMygCegUIARDeAQ",
+        "name":"Tech Watch",
+        "address":{
+        "@type": "PostalAddress",
+        "streetAddress": "230 S 45 E",
+        "addressLocality": "Salem",
+        "addressRegion": "UT",
+        "postalCode": "84653",
+        "addressCountry": "US"
+        },
+        "url":"https://priceless-northcutt-72657e.netlify.app/11unit/index.html",
+        "telephone":"8014568561",
+        "priceRange":"Please Call",
+        "openingHours": "Mo-Fri 09:00-16:00"
+        }
+        </script>
 </body>
+
 </html>

@@ -1,0 +1,27 @@
+.pageWrapper {
+    display: grid;
+    grid-template-areas:
+        "hamburger"
+        "header"
+        "content"
+        "footer"
+        "navigation";
+}
+
+.header {
+    grid-area: header;
+}
+.nav {
+    grid-area: navigation;
+
+    height: 100vh;
+}
+.main {
+    grid-area: content;
+}
+.footer {
+    grid-area: footer;
+}
+.hamburger {
+    grid-area: hamburger;
+}

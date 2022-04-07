@@ -1,0 +1,9 @@
+.pageWrapper {
+    max-width: 64rem;
+    margin: auto;
+    grid-template-areas: 
+        "header"
+        "navigation"
+        "content"
+        "footer";
+}

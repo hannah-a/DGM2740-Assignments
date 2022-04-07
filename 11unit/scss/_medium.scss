@@ -1,0 +1,13 @@
+.pageWrapper {
+    grid-template-areas: 
+        "header header"
+        "navigation content"
+        "footer footer";
+}
+
+.nav {
+    height: auto;
+}
+.nav__button {
+    display: none;
+}
