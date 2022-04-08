@@ -19,11 +19,17 @@ html {
     "footer"
     "navigation";
 }
-.headerWrapper {
-    background-color: $headerBackgroundColor;
-}
+
 .header {
   grid-area: header;
+}
+.header__figure {
+  width: clamp(150px, 50%, 10%);
+  margin: auto;
+  
+  padding: 2rem;
+
+  background-color: white;
 }
 .nav {
   grid-area: navigation;
@@ -34,6 +40,38 @@ html {
   grid-area: content;
 
 }
+.main__grid {
+  display: grid;
+  grid-template-areas:
+  "main"
+  "story1"
+  "story2";
+}
+.main__video {
+    position: relative;
+    grid-area: main;
+
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.main__videoIframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.main__storyImage {
+  width: 100%;
+  object-fit: cover;
+}
+.story1 {
+  grid-area: story1;
+}
+.story2 {
+  grid-area: story2;
+}
+
 .footer {
   grid-area: footer;
 }

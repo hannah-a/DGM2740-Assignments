@@ -5,9 +5,19 @@
         "footer footer";
 }
 
+
+.header__figure {
+    margin: 1rem;
+  }
 .nav {
     height: auto;
 }
 .nav__button {
     display: none;
+}
+
+.main__grid {
+    grid-template-areas:
+    "main main story1"
+    "main main story2";
 }
