@@ -148,7 +148,7 @@ html {
 
   text-align: center;
   color: white;
-  text-shadow: $textShadow;
+  text-shadow: darken($textShadow, 100%);
   .imageCiting a {
     text-decoration: none;
     color: white;
