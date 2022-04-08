@@ -3,21 +3,33 @@
         "header header"
         "navigation content"
         "footer footer";
+    grid-template-columns: 185px auto;
 }
 
 
 .header__figure {
+    width: clamp(150px, 100%, 10%);
     margin: 1rem;
-  }
+}
 .nav {
     height: auto;
+    width: 185px;
 }
 .nav__button {
     display: none;
 }
-
+.hamburger {
+    display: none;
+}
+.main {
+    margin-top: 0;
+}
 .main__grid {
     grid-template-areas:
-    "main main story1"
-    "main main story2";
+      "main main"
+      "story1 story2";
+    grid-template-columns: 50% 50%;
+}
+.main__story {
+    padding: 1rem;
 }
