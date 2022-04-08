@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/styles.css" rel="stylesheet" />
     <title>Tech Watch</title>
-</head>
+  </head>
 
-<body class="body">
+  <body class="body">
     <div class="pageWrapper">
+      <div class="headerWrapper">
         <header class="header">
-            <img class="header__logoImg" src="/images/logo.svg" alt="Tech Watch Logo">
+          <figure class="header__figure">
+            <img
+              class="header__logoImg"
+              src="/images/logo.svg"
+              alt="Tech Watch Logo"
+            />
+          </figure>
         </header>
         <nav class="nav">
-            <div id="myLinks" class="nav__button"><a href="#hamburger">X</a></div>
-            <ul class="ul">
-                <li class="ul__li"><a href="#" class="ul__liAnchor">Displays</a></li>
-                <li class="ul__li active"><a href="#" class="ul__liAnchor">Audio</a></li>
-                <li class="ul__li"><a href="#" class="ul__liAnchor">Video</a></li>
-                <li class="ul__li"><a href="#" class="ul__liAnchor">New Products</a></li>
-                <li class="ul__li"><a href="#" class="ul__liAnchor">Auto</a></li>
-            </ul>
+          <div id="myLinks" class="nav__button"><a href="#hamburger">X</a></div>
+          <ul class="ul">
+            <li class="ul__li">
+              <a href="#" class="ul__liAnchor">Displays</a>
+            </li>
+            <li class="ul__li active">
+              <a href="#" class="ul__liAnchor">Audio</a>
+            </li>
+            <li class="ul__li"><a href="#" class="ul__liAnchor">Video</a></li>
+            <li class="ul__li">
+              <a href="#" class="ul__liAnchor">New Products</a>
+            </li>
+            <li class="ul__li"><a href="#" class="ul__liAnchor">Auto</a></li>
+          </ul>
         </nav>
-        <main class="main">
-
-        </main>
-        <footer class="footer">
-            <div class="hannahInfo">
-                <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
-            </div>
-            <div class="imageCiting">
-            </div>
-        </footer>
-        <div id="hamburger" class="hamburger nav__button"><a href="#myLinks">&#9776;</a></div>
+      </div>
+      <main class="main"></main>
+      <footer class="footer">
+        <div class="hannahInfo">
+          <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
+        </div>
+        <div class="imageCiting"></div>
+      </footer>
+      <div id="hamburger" class="hamburger nav__button">
+        <a href="#myLinks">&#9776;</a>
+      </div>
     </div>
     <script type="application/ld+json">
-        {
-        "@context":"https://schema.org",
-        "@type":"localBusiness",
-        "image":"https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885__480.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&tbnid=DH7p1w2o_fIU8M&vet=12ahUKEwj_9YvxiIP3AhXzAZ0JHfVRDh4QMygCegUIARDeAQ..i&docid=Ba_eiczVaD9-zM&w=771&h=480&q=image&ved=2ahUKEwj_9YvxiIP3AhXzAZ0JHfVRDh4QMygCegUIARDeAQ",
-        "name":"Tech Watch",
-        "address":{
-        "@type": "PostalAddress",
-        "streetAddress": "230 S 45 E",
-        "addressLocality": "Salem",
-        "addressRegion": "UT",
-        "postalCode": "84653",
-        "addressCountry": "US"
+      {
+        "@context": "https://schema.org",
+        "@type": "localBusiness",
+        "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885__480.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&tbnid=DH7p1w2o_fIU8M&vet=12ahUKEwj_9YvxiIP3AhXzAZ0JHfVRDh4QMygCegUIARDeAQ..i&docid=Ba_eiczVaD9-zM&w=771&h=480&q=image&ved=2ahUKEwj_9YvxiIP3AhXzAZ0JHfVRDh4QMygCegUIARDeAQ",
+        "name": "Tech Watch",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "230 S 45 E",
+          "addressLocality": "Salem",
+          "addressRegion": "UT",
+          "postalCode": "84653",
+          "addressCountry": "US"
         },
-        "url":"https://priceless-northcutt-72657e.netlify.app/11unit/index.html",
-        "telephone":"8014568561",
-        "priceRange":"Please Call",
+        "url": "https://priceless-northcutt-72657e.netlify.app/11unit/index.html",
+        "telephone": "8014568561",
+        "priceRange": "Please Call",
         "openingHours": "Mo-Fri 09:00-16:00"
-        }
-        </script>
-</body>
-
+      }
+    </script>
+  </body>
 </html>

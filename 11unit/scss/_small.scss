@@ -1,27 +1,42 @@
-.pageWrapper {
-    display: grid;
-    grid-template-areas:
-        "hamburger"
-        "header"
-        "content"
-        "footer"
-        "navigation";
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: "Scada", sans-serif;
+  background-image: url(/images/horizontalLines.svg); // need to change
 }
 
+.pageWrapper {
+  display: grid;
+  grid-template-areas:
+    "hamburger"
+    "header"
+    "content"
+    "footer"
+    "navigation";
+}
+.headerWrapper {
+    background-color: $headerBackgroundColor;
+}
 .header {
-    grid-area: header;
+  grid-area: header;
 }
 .nav {
-    grid-area: navigation;
+  grid-area: navigation;
 
-    height: 100vh;
+  height: 100vh;
 }
 .main {
-    grid-area: content;
+  grid-area: content;
+
 }
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 .hamburger {
-    grid-area: hamburger;
+  grid-area: hamburger;
 }

@@ -100,10 +100,26 @@ input, select {
   vertical-align: middle;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: "Scada", sans-serif;
+  background-image: url(/images/horizontalLines.svg);
+}
+
 .pageWrapper {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "hamburger" "header" "content" "footer" "navigation";
+}
+
+.headerWrapper {
+  background-color: white;
 }
 
 .header {
@@ -151,9 +167,11 @@ input, select {
 
 @media only screen and (min-width: 75rem) {
   .pageWrapper {
+        grid-template-areas: "header" "navigation" "content" "footer";
+  }
+  .main {
     max-width: 64rem;
     margin: auto;
-        grid-template-areas: "header" "navigation" "content" "footer";
   }
 }
 /*# sourceMappingURL=styles.css.map */
