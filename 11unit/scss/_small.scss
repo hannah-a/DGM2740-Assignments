@@ -20,22 +20,47 @@ html {
     "navigation";
 }
 
+//Header
 .header {
   grid-area: header;
 }
 .header__figure {
-  width: clamp(150px, 50%, 10%);
+  width: clamp(150px, 50%, 10%); //logo image
   margin: auto;
   
   padding: 2rem;
 
   background-color: white;
 }
+
+
+//Navigation
 .nav {
   grid-area: navigation;
 
   height: 100vh;
+
+  background-color: $headerBackgroundColor;
 }
+.ul {
+  
+}
+.nav__button { //Hamburger Button
+  padding: 1rem 1rem 0 1rem;
+
+  font-size: 2rem;
+}
+#myLinks a{
+  text-decoration: none;
+  color: black;
+}
+#hamburger a{
+  text-decoration: none;
+  color: white;
+}
+
+
+//Main Content
 .main {
   grid-area: content;
 
@@ -75,6 +100,8 @@ html {
 .footer {
   grid-area: footer;
 }
+
 .hamburger {
   grid-area: hamburger;
+  justify-self: end;
 }
