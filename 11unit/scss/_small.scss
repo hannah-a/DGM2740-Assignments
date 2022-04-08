@@ -148,7 +148,9 @@ html {
 
   text-align: center;
   color: white;
-  text-shadow: darken($textShadow, 100%);
+  text-shadow: $textShadow;
+
+  background-color: rgb(8, 8, 34);
   .imageCiting a {
     text-decoration: none;
     color: white;
