@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Hotel Cornelisz",
+        "photo": "images/amsterdam.jpg",
+        "address": ["9V6M+95 Amsterdam", "Netherlands"],
+        "phone":"+31206714785"
+    },
+    {
+        "name": "Hotel Wailea",
+        "photo": "images/hawaii.jpg",
+        "address": ["555 Kaukahi St, Wailea", "HI 96753"],
+        "phone":"+18088740500"
+    },
+    {
+        "name": "Westgate Las Vegas Resort & Casino",
+        "photo": "images/lasvegas.jpg",
+        "address": ["3000 Paradise Rd", "Las Vegas, NV 89109"],
+        "phone":"+17027325111"
+    },
+    {
+        "name": "Hotel Spinne",
+        "photo": "images/switzerland.jpg",
+        "address": ["Dorfstrasse 136", "3818 Grindelwald, Switzerland"],
+        "phone":"+41338548888"
+    }
+]

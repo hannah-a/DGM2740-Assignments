@@ -1,0 +1,46 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: yellow;
+}
+
+.ul {
+    display: flex;
+}
+
+.ul__li {
+    flex-basis: 33.3%;
+}
+.ul__liAnchor {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.inventoryWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.main__figure {
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+.main__figureImg {
+    width: 100%;
+}
+.main__figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+// div {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+// }
+// div below span i {
+//     float: left;
+//     font-size: 1.5rem;
+// }
