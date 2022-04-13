@@ -32,18 +32,18 @@ fetch(hotelData)
     //Address grid div
     let addressIcon = document.createElement('div')
     addressIcon.innerHTML = `<ion-icon name="map"></ion-icon>`
-    addressIcon.className = 'main__addressIcon'
+    addressIcon.className = 'main__addressIcon main__addressItem'
 
     let phoneIcon = document.createElement('div')
     phoneIcon.innerHTML = `<ion-icon name="call"></ion-icon>`
-    phoneIcon.className = 'main__phoneIcon'
+    phoneIcon.className = 'main__phoneIcon main__addressItem'
 
     let address = document.createElement('p')
-    address.className = 'main__address'
+    address.className = 'main__address main__addressItem'
     address.innerHTML = `${hotel.address[0]} <br> ${hotel.address[1]}`
 
     let phone = document.createElement('p')
-    phone.className = 'main__phone'
+    phone.className = 'main__phone main__addressItem'
     phone.textContent = hotel.phone
 
 
