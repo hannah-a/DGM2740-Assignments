@@ -1,4 +1,10 @@
-
+.main {
+   max-width: 64rem;
+   margin: 0 auto;
+}
 .main__inventoryWrapper {
-        grid-template-columns: 1fr 1fr;
+ grid-template-columns: 1fr 1fr;
+}
+.main__figureDiv {
+    margin: 2rem;
 }
