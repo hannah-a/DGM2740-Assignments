@@ -1,4 +1,4 @@
-.main {
+.main, .main__h2{
    max-width: 64rem;
    margin: 0 auto;
 }
@@ -7,4 +7,9 @@
 }
 .main__figureDiv {
     margin: 2rem;
+}
+.main__h2 {
+    padding-left: 2rem;
+
+    font-size: 1.6rem;
 }
