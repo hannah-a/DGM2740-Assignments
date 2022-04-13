@@ -27,7 +27,7 @@ fetch(hotelData)
 
     //Contact Items
     let addressPhoneDiv = document.createElement('div')
-    addressPhoneDiv.className = '.main__addressPhoneDiv'
+    addressPhoneDiv.className = 'main__addressPhoneDiv'
 
     //Address grid div
     let addressIcon = document.createElement('div')
@@ -55,7 +55,7 @@ fetch(hotelData)
     addressPhoneDiv.appendChild(address)
     addressPhoneDiv.appendChild(phoneIcon)
     addressPhoneDiv.appendChild(phone)
-    
+
     inventoryWrapper.appendChild(figureDiv)
     figureDiv.appendChild(addressPhoneDiv)
 
