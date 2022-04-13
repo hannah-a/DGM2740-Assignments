@@ -19,10 +19,12 @@
     text-transform: uppercase;
 }
 
-.inventoryWrapper {
+.main__inventoryWrapper {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+
 .main__figure {
     margin: 0;
     width: 100%;
@@ -36,6 +38,12 @@
     bottom: 0;
     width: 100%;
 }
+
+.main__addressPhoneDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 // div {
 //     display: grid;
 //     grid-template-columns: 1fr 1fr;
