@@ -1,4 +1,4 @@
-const hotelData = '/hotels.json' // change link for big website
+const hotelData = '/12unit/hotels.json' // change link for big website
 
 fetch(hotelData)
 .then((response) => response.json())
