@@ -55,8 +55,6 @@ getWeatherData().then(data => {
 
 
 //Seattle is 7 hours ahead so to get the lunch time at 12:00:00 is GMT to seattle time I would need the 18:00:00
-// for (i=0; i<weatherData.list.length; i++) {
-//     var time = weat
-// }
+
 
 // &#xb0 degree symbol
