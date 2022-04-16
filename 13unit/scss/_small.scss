@@ -1,4 +1,63 @@
+//font-family: 'Quicksand', sans-serif;
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: "Vollkorn", serif;
+}
+
+
+.body {
+    background-image: url('/13unit/images/wave.svg'); //change the link
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.header {
+    margin-top: 8rem;
+}
+.header__h1 {
+    padding: 1rem;
+
+    background-color: $backgroundColor;
+
+    font-size: 3rem;
+    color: white;
+}
+
 #main__weatherDiv {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    margin: 4rem;
+}
+
+.main__weatherItem {
+    margin: 2rem;
+    padding: 2rem;
+
+    background-color: darken($backgroundColor, 50%);
+    border-radius: 20px;
+
+    color: white;
+}
+.main__weatherTitle {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.main__weatherTemp{
+    padding: 1rem;
+    font-size: 2rem;
+}
+.footer {
+    text-align: center;
 }

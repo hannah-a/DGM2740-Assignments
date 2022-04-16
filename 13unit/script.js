@@ -35,7 +35,7 @@ getWeatherData().then(data => {
             dayWeather.className = 'main__weatherInfo'
             dayWeather.textContent = list[i].weather[0].description
 
-            const temp = document.createElement('span')
+            const temp = document.createElement('div')
             temp.className = 'main__weatherTemp'
             temp.innerHTML = `${list[i].main.temp} &#xb0;F`
 
@@ -45,9 +45,9 @@ getWeatherData().then(data => {
             
             mainDiv.appendChild(dayDiv)
             dayDiv.appendChild(dayTitle)
-            dayDiv.appendChild(dayWeather)
             dayDiv.appendChild(temp)
             dayDiv.appendChild(icon)
+            dayDiv.appendChild(dayWeather)
         }
     }
 })
