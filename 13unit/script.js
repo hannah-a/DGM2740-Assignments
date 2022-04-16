@@ -22,6 +22,7 @@ getWeatherData().then(data => {
             const unixCode = weatherData.list[i].dt * 1000
             const date = new Date(unixCode)
             const longDate = date.toLocaleString('en-US', {weekday: 'long'})
+            
             const mainDiv = document.querySelector('#main__weatherDiv')
 
             const dayDiv = document.createElement('div')
