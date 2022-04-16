@@ -19,7 +19,7 @@ getWeatherData().then(data => {
     for(i = 0; i<list.length; i++) {
         let time = list[i].dt_txt
         if(time.includes('18:00:00')) {
-            const unixCode = weatherData.list[0].dt * 1000
+            const unixCode = weatherData.list[i].dt * 1000
             const date = new Date(unixCode)
             const longDate = date.toLocaleString('en-US', {weekday: 'long'})
             const mainDiv = document.querySelector('#main__weatherDiv')
