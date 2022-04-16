@@ -1,0 +1,2 @@
+#main__weatherDiv{display:-ms-grid;display:grid;-ms-grid-columns:1fr;grid-template-columns:1fr}@media only screen and (min-width: 35rem){#main__weatherDiv{-ms-grid-columns:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr}}@media only screen and (min-width: 75rem){#main__weatherDiv{-ms-grid-columns:1fr 1fr 1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr 1fr 1fr}}
+/*# sourceMappingURL=styles.css.map */
