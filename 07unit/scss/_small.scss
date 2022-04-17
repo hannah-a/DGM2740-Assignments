@@ -221,6 +221,7 @@ footer {
   $w: ($i / 12) * 100%;
   .small-#{$i} {
     flex-basis: $w;
+    column-gap: 20px;
   }
 }
 

@@ -1,1 +1,10 @@
 //font-family: 'Sen', sans-serif;
+
+//Columns
+@for $i from 0 through 12 {
+    $w: ($i / 12) * 100%;
+    .small-#{$i} {
+        flex-basis: $w;
+        column-gap: 20px;
+    }
+}
