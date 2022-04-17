@@ -113,6 +113,7 @@ html {
 .main__formulaKeyWords {
     padding-top: .4rem;
     color: white;
+    font-weight: 400;
 }
 .main__successTitle {
     padding: .8rem 0;
@@ -125,9 +126,10 @@ html {
 
 //MORE ABOUT US Sections
 .main__moreAboutTitle {
-    padding: 2rem 1rem .4rem 1rem;
+    padding: 2rem 1rem .1rem 1rem;
 
     font-size: 1.6rem;
+    font-weight: 400;
     color: #0480b1;
 }
 .main__glowWrapper {
@@ -148,6 +150,7 @@ html {
 }
 .main__moreAboutItemTitle {
     padding-top: 1rem;
+    padding-bottom: .4rem;
 
     font-size: 1.2rem;
     font-weight: 400;
@@ -160,6 +163,104 @@ html {
 }
 
 //Technology and Button Section
+
 .main__threeArticlesPriceFlex {
+    position: relative;
+    bottom: 2px;
+    padding: 0 1rem;
+}
+.main__threeArticlesItem {
+
+    padding-top: 1rem;
+}
+.paddingRight {
+    padding-right: 1rem;
+}
+.main__threeArticlesFigure {
+    width: 100%;
+    height: auto;
+}
+.main__threeArticlesImage {
+    width: 100%;
+    height: auto;
+}
+.main__threeArticlesTitle {
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #0480b1;
+}
+.main__threeArticlesDescription {
+    color: grey;
+    line-height: 1rem;
+    font-size: .8rem;
+}
+
+//Price Div
+.main__pricingDiv {
+    flex-direction: column;
+    height: fit-content;
+    padding: 1rem 1rem 1rem 0;
+}
+.main__seePricingButton {
+    padding: .2rem 1rem;
+    width: 70%;
+    margin: auto;
+
+    background-color: #0480b1;
+    border-style: none;
+    border-radius: 20px;
     
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 2%;
+}
+.main__pricingFootnote {
+    padding: .6rem 0;
+
+    text-align: center;
+    color: grey;
+    font-size: .8rem;
+}
+.main__pricingFigure {
+    width: 100%;
+    height: auto;
+}
+.main__pricingImage {
+    width: 100%;
+    height: auto;
+}
+
+//Footer 
+.footer__companyLogos {
+    padding: 2rem 1rem;
+    justify-content: space-around;
+    align-items: center;
+    // flex-wrap: nowrap;
+}
+.footer__companyLogoFigure {
+    width: 100%;
+    height: auto;
+    padding: .5rem;
+}
+.footer__companyLogo {
+    width: 100%;
+    height: auto;
+}
+
+.footer__phoneNumberWrapper {
+    height: 50px;
+     margin-bottom: 3rem;
+
+     background: rgb(0,0,0);
+     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(4,128,177,1) 67%);
+}
+.footer__phoneNumber {
+    padding: 1rem;
+   
+
+    color: white;
+    font-weight: 400;
 }
