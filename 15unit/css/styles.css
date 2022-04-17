@@ -514,10 +514,6 @@ html {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .main__threeArticlesPriceFlex {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
 }
 
 @media only screen and (min-width: 58.75rem) {
