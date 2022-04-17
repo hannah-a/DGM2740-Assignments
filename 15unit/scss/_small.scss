@@ -1,30 +1,127 @@
 //font-family: 'Sen', sans-serif;
 //Utility Rules
 .flexed {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .maxWidth {
-    max-width: 58.75rem;
-    margin: 0 auto;
+  max-width: 58.75rem;
+  margin: 0 auto;
 }
 
 //Columns
 @for $i from 0 through 12 {
-    $w: ($i / 12) * 100%;
-    .small-#{$i} {
-        flex-basis: $w;
-        column-gap: 10px;
-    }
+  $w: ($i / 12) * 100%;
+  .small-#{$i} {
+    flex-basis: $w;
+    column-gap: 10px;
+  }
 }
+
 //Global
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    font-family: 'Sen', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: "Sen", sans-serif;
+}
+
+//Creating the Logo with flex
+.header {
+  padding: 1rem 0 0 1rem;
+}
+.header__logoDiv {
+  flex-wrap: nowrap; //graphic and words of logo stay on same line
+}
+//nested flexed div that only contains the words
+.header__logoWordImages {
+  flex-direction: column;
+
+  padding-top: 0.5rem;
+  padding-left: 0.4rem;
+}
+.header__logoBlueRiverStudioImg {
+  padding-top: 0.2rem; //adding padding to word studio
+}
+.header__logoLine {
+  width: 98%; //slightly smaller so it doesn't overflow the page
+  height: 2%;
+  margin: 0.2rem 0 0 0.4rem;
+}
+
+
+//Navigation
+.nav {
+  padding: 0.4rem;
+}
+.nav__mainUl {
+  width: 100%;
+  justify-content: space-around;
+}
+.nav__icon {
+  padding-right: 0.2rem;
+}
+.nav__mainListItems {
+  padding: 0 0.4rem;
+  font-weight: 400;
+}
+
+//Hero Image
+.main__heroFigure {
+  width: 100%;
+  height: auto;
+}
+
+.main__heroImg {
+  width: 100%;
+  height: auto;
+}
+
+//Success Black Section
+.main__successWrapperSection {
+    margin-top: .6rem;
+
+    background-color: black;
+}
+.main__successSection {
+    padding: 1rem;
+}
+.main__yellowTitle {
+    font-size: 1.5rem;
+    color: rgb(255, 234, 0);
+}
+.main__expectBestDescription {
+    padding-top: .4rem;
+    font-size: .9rem;
+    color: white;
+}
+.main__expectBestUl {
+    padding: 1rem 0 2rem 3rem;
+    color: white;
+}
+
+.main__formulaDiv {
+    width: 100%;
+    text-align: right;
+}
+.main__formulaKeyWords {
+    padding-top: .4rem;
+    color: white;
+}
+.main__successTitle {
+    padding: .8rem 0;
+
+    color: rgb(255, 234, 0);
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+
+//MORE ABOUT US Section
+.main__moreAboutTitle {
+    
 }

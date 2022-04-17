@@ -6,3 +6,13 @@
         column-gap: 20px;
     }
 }
+.header {
+    padding: 1rem 0 0 1rem;
+}
+.header__logoLine {
+    width: 99%; //slightly smaller width do it doesn't overflow the page
+}
+.nav__mainUl {
+    width: 100%;
+    justify-content: flex-end;
+}
