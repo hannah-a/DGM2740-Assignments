@@ -219,23 +219,88 @@ html {
 
 .nav {
   padding: 0.4rem;
+  height: 45px;
 }
 
 .nav__mainUl {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 50%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 1rem 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+
+.nav__buttonHamburger {
+  position: absolute;
+  z-index: 2;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding-right: 1.5rem;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.nav__buttonX {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding-right: 1.5rem;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.nav__buttonHamburger.closed {
+  display: none;
+}
+
+.nav__buttonX.open {
+  display: block;
+}
+
+.nav__buttonHamburger:hover {
+  cursor: pointer;
+  color: #0480b1;
+}
+
+.nav__buttonX {
+  cursor: pointer;
+  color: #0480b1;
+}
+
+.nav__mainUl.open__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav__icon {
   padding-right: 0.2rem;
+  display: none;
 }
 
 .nav__mainListItems {
-  padding: 0 0.4rem;
+  padding: 0.4rem;
+  width: 100%;
   font-weight: 400;
-  font-size: .8rem;
-  color: grey;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+  color: black;
+}
+
+.nav__mainListItems:hover {
+  cursor: pointer;
+  color: #0480b1;
+  background-color: white;
 }
 
 .main__heroFigure {
@@ -249,7 +314,7 @@ html {
 }
 
 .main__successWrapperSection {
-  margin-top: .6rem;
+  margin-top: 0.6rem;
   background-color: black;
 }
 
@@ -263,8 +328,8 @@ html {
 }
 
 .main__expectBestDescription {
-  padding-top: .4rem;
-  font-size: .9rem;
+  padding-top: 0.4rem;
+  font-size: 0.9rem;
   color: white;
 }
 
@@ -279,20 +344,20 @@ html {
 }
 
 .main__formulaKeyWords {
-  padding-top: .4rem;
+  padding-top: 0.4rem;
   color: white;
   font-weight: 400;
 }
 
 .main__successTitle {
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   color: #fcd831;
   font-style: italic;
   font-size: 1.8rem;
 }
 
 .main__moreAboutTitle {
-  padding: 2rem 1rem .1rem 1rem;
+  padding: 2rem 1rem 0.1rem 1rem;
   font-size: 1.6rem;
   font-weight: 400;
   color: #0480b1;
@@ -320,7 +385,7 @@ html {
 
 .main__moreAboutItemTitle {
   padding-top: 1rem;
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
   font-size: 1.2rem;
   font-weight: 400;
   color: #0480b1;
@@ -329,7 +394,7 @@ html {
 .main__moreAboutDescription {
   color: grey;
   line-height: 1rem;
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
 
 .main__threeArticlesPriceFlex {
@@ -358,7 +423,7 @@ html {
 
 .main__threeArticlesTitle {
   padding-top: 1rem;
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
   font-size: 1.2rem;
   font-weight: 400;
   color: #0480b1;
@@ -367,7 +432,7 @@ html {
 .main__threeArticlesDescription {
   color: grey;
   line-height: 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .main__pricingDiv {
@@ -382,7 +447,7 @@ html {
 }
 
 .main__seePricingButton {
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
   width: 70%;
   margin: auto;
   background-color: #0480b1;
@@ -394,10 +459,10 @@ html {
 }
 
 .main__pricingFootnote {
-  padding: .6rem 0;
+  padding: 0.6rem 0;
   text-align: center;
   color: grey;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .main__pricingFigure {
@@ -422,7 +487,7 @@ html {
 .footer__companyLogoFigure {
   width: 100%;
   height: auto;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .footer__companyLogo {
@@ -503,11 +568,32 @@ html {
   .header__logoLine {
     width: 99%;
   }
+  .nav {
+    padding: 0.4rem;
+  }
   .nav__mainUl {
     width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__buttonHamburger {
+    display: none;
+  }
+  .nav__buttonX {
+    display: none;
+  }
+  .nav__icon {
+    padding-right: 0.2rem;
+  }
+  .nav__mainListItems {
+    padding: 0 0.4rem;
+    font-weight: 400;
+    font-size: .8rem;
+    color: grey;
   }
   .main__successSection {
     padding: 1rem;

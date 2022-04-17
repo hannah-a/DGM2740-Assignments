@@ -52,25 +52,82 @@ html {
   margin: 0.2rem 0 0 0.4rem;
 }
 
-
 //Navigation
 .nav {
   padding: 0.4rem;
+  height: 45px;
 }
 .nav__mainUl {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 50%;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 3rem 1rem 1rem 1rem;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+.nav__buttonHamburger {
+  position: absolute;
+  z-index: 2;
   width: 100%;
-  justify-content: space-around;
+  padding-right: 1.5rem;
+
+  text-align: right;
+  font-size: 2rem;
 }
-.nav__icon {
-  padding-right: 0.2rem;
+.nav__buttonX {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding-right: 1.5rem;
+
+  text-align: right;
+  font-size: 2rem;
 }
-.nav__mainListItems {
-  padding: 0 0.4rem;
-  font-weight: 400;
-  font-size: .8rem;
-  color: grey;
+.nav__buttonHamburger.closed {
+    display: none;
+}
+.nav__buttonX.open {
+    display: block;
+}
+.nav__buttonHamburger:hover {
+  cursor: pointer;
+  color: #0480b1;
+}
+.nav__buttonX {
+  cursor: pointer;
+  color: #0480b1;
 }
 
+.nav__mainUl.open__ul {
+  display: flex;
+}
+.nav__hamburgerOpen {
+}
+
+.nav__icon {
+  padding-right: 0.2rem;
+  display: none;
+}
+.nav__mainListItems {
+  padding: 0.4rem;
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+  color: rgb(0, 0, 0);
+}
+.nav__mainListItems:hover {
+  cursor: pointer;
+  color: #0480b1;
+  background-color: rgb(255, 255, 255);
+}
 //Hero Image
 .main__heroFigure {
   width: 100%;
@@ -84,183 +141,183 @@ html {
 
 //Success Black Section
 .main__successWrapperSection {
-    
-    margin-top: .6rem;
+  margin-top: 0.6rem;
 
-    background-color: black;
+  background-color: black;
 }
 .main__successSection {
-    padding: 1rem;
+  padding: 1rem;
 }
 .main__yellowTitle {
-    font-size: 1.5rem;
-    color: #fcd831;
+  font-size: 1.5rem;
+  color: #fcd831;
 }
 .main__expectBestDescription {
-    padding-top: .4rem;
-    font-size: .9rem;
-    color: white;
+  padding-top: 0.4rem;
+  font-size: 0.9rem;
+  color: white;
 }
 .main__expectBestUl {
-    padding: 1rem 0 2rem 3rem;
-    color: white;
+  padding: 1rem 0 2rem 3rem;
+  color: white;
 }
 
 .main__formulaDiv {
-    width: 100%;
-    text-align: right;
+  width: 100%;
+  text-align: right;
 }
 .main__formulaKeyWords {
-    padding-top: .4rem;
-    color: white;
-    font-weight: 400;
+  padding-top: 0.4rem;
+  color: white;
+  font-weight: 400;
 }
 .main__successTitle {
-    padding: .8rem 0;
+  padding: 0.8rem 0;
 
-    color: #fcd831;
-    font-style: italic;
-    font-size: 1.8rem;
+  color: #fcd831;
+  font-style: italic;
+  font-size: 1.8rem;
 }
-
 
 //MORE ABOUT US Sections
 .main__moreAboutTitle {
-    padding: 2rem 1rem .1rem 1rem;
+  padding: 2rem 1rem 0.1rem 1rem;
 
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #0480b1;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #0480b1;
 }
 .main__glowWrapper {
-    background-image: url(/images/Glow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url(/images/Glow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.main__linePicture  {
-    padding: 0 1rem;
-    width: 100%;
+.main__linePicture {
+  padding: 0 1rem;
+  width: 100%;
 }
 .main__moreAboutItem {
-    padding: 1rem;
+  padding: 1rem;
 }
 .main__moreAboutImage {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .main__moreAboutItemTitle {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
+  padding-top: 1rem;
+  padding-bottom: 0.4rem;
 
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #0480b1;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #0480b1;
 }
 .main__moreAboutDescription {
-    color: grey;
-    line-height: 1rem;
-    font-size: .6rem;
+  color: grey;
+  line-height: 1rem;
+  font-size: 0.6rem;
 }
 
 //Technology and Button Section
 
 .main__threeArticlesPriceFlex {
-    position: relative;
-    bottom: 2px;
-    padding: 0 1rem;
+  position: relative;
+  bottom: 2px;
+  padding: 0 1rem;
 }
 .main__threeArticlesItem {
-
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 .paddingRight {
-    padding-right: 1rem;
+  padding-right: 1rem;
 }
 .main__threeArticlesFigure {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .main__threeArticlesImage {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .main__threeArticlesTitle {
-    padding-top: 1rem;
-    padding-bottom: .4rem;
+  padding-top: 1rem;
+  padding-bottom: 0.4rem;
 
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #0480b1;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #0480b1;
 }
 .main__threeArticlesDescription {
-    color: grey;
-    line-height: 1rem;
-    font-size: .8rem;
+  color: grey;
+  line-height: 1rem;
+  font-size: 0.8rem;
 }
 
 //Price Div
 .main__pricingDiv {
-    flex-direction: column;
-    height: fit-content;
-    padding: 1rem 1rem 1rem 0;
+  flex-direction: column;
+  height: fit-content;
+  padding: 1rem 1rem 1rem 0;
 }
 .main__seePricingButton {
-    padding: .2rem 1rem;
-    width: 70%;
-    margin: auto;
+  padding: 0.2rem 1rem;
+  width: 70%;
+  margin: auto;
 
-    background-color: #0480b1;
-    border-style: none;
-    border-radius: 20px;
-    
-    color: white;
-    font-size: 1.4rem;
-    letter-spacing: 2%;
+  background-color: #0480b1;
+  border-style: none;
+  border-radius: 20px;
+
+  color: white;
+  font-size: 1.4rem;
+  letter-spacing: 2%;
 }
 .main__pricingFootnote {
-    padding: .6rem 0;
+  padding: 0.6rem 0;
 
-    text-align: center;
-    color: grey;
-    font-size: .8rem;
+  text-align: center;
+  color: grey;
+  font-size: 0.8rem;
 }
 .main__pricingFigure {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .main__pricingImage {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-//Footer 
+//Footer
 .footer__companyLogos {
-    padding: 2rem 1rem;
-    justify-content: space-around;
-    align-items: center;
-    // flex-wrap: nowrap;
+  padding: 2rem 1rem;
+  justify-content: space-around;
+  align-items: center;
+  // flex-wrap: nowrap;
 }
 .footer__companyLogoFigure {
-    width: 100%;
-    height: auto;
-    padding: .5rem;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
 }
 .footer__companyLogo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .footer__phoneNumberWrapper {
-    height: 50px;
-     margin-bottom: 3rem;
+  height: 50px;
+  margin-bottom: 3rem;
 
-     background: rgb(0,0,0);
-     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(4,128,177,1) 67%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(4, 128, 177, 1) 67%
+  );
 }
 .footer__phoneNumber {
-    padding: 1rem;
-   
+  padding: 1rem;
 
-    color: white;
-    font-weight: 400;
+  color: white;
+  font-weight: 400;
 }

@@ -11,9 +11,30 @@
 .header__logoLine {
     width: 99%; //slightly smaller width do it doesn't overflow the page
 }
+
+
+.nav {
+    padding: 0.4rem;
+}
 .nav__mainUl {
     width: 100%;
     justify-content: flex-end;
+    display: flex;
+}
+.nav__buttonHamburger {
+    display: none;
+}
+.nav__buttonX {
+    display: none;
+}
+.nav__icon {
+    padding-right: 0.2rem;
+}
+.nav__mainListItems {
+    padding: 0 0.4rem;
+    font-weight: 400;
+    font-size: .8rem;
+    color: grey;
 }
 .main__successSection {
     padding: 1rem;
@@ -22,3 +43,4 @@
 .main__threeArticlesPriceFlex {
     flex-wrap: nowrap;
 }
+
