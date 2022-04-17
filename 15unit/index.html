@@ -1,33 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <!--Change Link-->
     <title></title>
-</head>
-<body class="body">
-    <header class="header">
-        <div class="header__logoDiv" >
-            <img class src="/images/logos/BlueRiver.jpg" alt="Logo of blue box with white river"> <!--Change links for logos-->
-            <div class="header__logoWordImages">
-                <img src="/15uni"
-            </div>
+  </head>
+  <body class="body">
+    <header class="header maxWidth">
+      <div class="header__logoDiv flexed">
+        <img
+          class="header__blueRiverGraphic"
+          src="/images/logos/Logo.jpg"
+          alt="Logo of blue box with white river"
+        />
+        <!--Change links for logos-->
+        <div class="header__logoWordImages">
+          <img
+            class="header__logoBlueRiverStudioImg"
+            src="/images/logos/BlueRiver.jpg"
+            alt="Picture of 'Blue Studio' words"
+          />
+          <img
+            class="header__logoBlueRiverStudioImg"
+            src="/images/logos/STUDIOS.jpg"
+            alt="Picture of the word, 'studio'"
+          />
         </div>
+      </div>
     </header>
+    <nav class="nav flexed maxWidth">
+      <ul class="nav__mainUl">
+        <li class="nav__mainListAnchors">
+          <img
+            class="nav__icon"
+            src="/images/logos/head_icon_home.png"
+            alt="Home icon"
+          />Home
+        </li>
+        <!--Change links for logos-->
+        <li class="nav__mainListAnchors">
+          <img
+            class="nav__icon"
+            src="/images/logos/head_icon_portfolio.png"
+            alt="Portfolio icon"
+          />Portfolio
+        </li>
+        <!--Change links for logos-->
+        <li class="nav__mainListAnchors">
+          <img
+            class="nav__icon"
+            src="/images/logos/head_icon_contact.png"
+            alt="Contact icon"
+          />Contact
+        </li>
+        <!--Change links for logos-->
+      </ul>
+    </nav>
     <main class="main">
-
+      <figure class="main__heroFigure maxWidth">
+        <img
+          class="main__heroImg"
+          src="/images/Banner.jpg"
+          alt="Decorative image of a woman on a chalk board choosing tech screens"
+        />
+      </figure>
+      <section class="main__successWrapperSection">
+        <section class="main__successSection maxWidth flexed">
+          <div class="main__expectBestDiv">
+            <h1 class="main__yellowTitle">EXPECT THE BEST</h1>
+            <p class="main__expectBestDescription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              auctor rhoncus est sed lobortis. Nam aliquam nisi magna, nec
+              accumsan metus euismod vel. Praesent at vestibulum nibh, eu
+              tristique risus.
+            </p>
+            <ul class="main__expectBestUl">
+              <li class="main__expectBestLi">Mobile First Design</li>
+              <li class="main__expectBestLi">Masterful Graphics</li>
+              <li class="main__expectBestLi">Modern Designs</li>
+              <li class="main__expectBestLi">Marketing</li>
+            </ul>
+          </div>
+          <div class="main__formulaDiv">
+            <h1 class="main__yellowTitle">OUR FORMULA</h1>
+            <h2 class="main__formulaKeyWords">development<br /></h2>
+            <h2 class="main__formulaKeyWords">+ deployment<br /></h2>
+            <h2 class="main__formulaKeyWords">+ design<br /></h2>
+            <h3 class="main__yellowTitle">SUCCESS</h3>
+          </div>
+        </section>
+      </section>
+      <section class="main__moreAboutSection maxWidth flexed">
+        <h1 class="main__moreAboutTitle">MORE ABOUT US</h1>
+        <div class="main__moreAboutItem">
+          <figure class="main__moreAboutFigure">
+            <img
+              class="main__moreAboutImage"
+              src="/images/aboutus/Layer 4.jpg"
+              alt="Decorative image of man at laptop"
+            />
+          </figure>
+          <h2 class="main__moreAboutItemTitle">Our Persistence</h2>
+          <p class="main__moreAboutDescription">
+            Sed, cursus, in nunc adipiscing phasellus in turpis etiam! Nec,
+            placerat! Tortor, et et vel, nunc? Proin quis tincidunt scelerisque
+            porttitor? Dapibus. Ultricies! Velit magna urna. Porta quis odio
+            natoque arcu pulvinar aenean, ut pellentesque! Nec proin montes! Pid
+            elit lacus.sagittis dignissim vut.
+          </p>
+        </div>
+        <div class="main__moreAboutItem">
+          <figure class="main__moreAboutFigure">
+            <img
+              class="main__moreAboutImage"
+              src="/images/aboutus/Layer 2.jpg"
+              alt="Decorative image of man touching a touchscreen"
+            />
+          </figure>
+          <h2 class="main__moreAboutItemTitle">Our Process</h2>
+          <p class="main__moreAboutDescription">
+            In nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor,
+            et et vel, nunc? Proin quis tincidunt scelerisque porttitor?
+            Dapibus. Ultricies! Velit magna urna. Porta quis odio natoque arcu
+            pulvinar aenean, ut pellentesque! Nec proin montes! Pid elit lacus.
+            Amet non facilisis massa.
+          </p>
+        </div>
+        <div class="main__moreAboutItem">
+          <figure class="main__moreAboutFigure">
+            <img
+              class="main__moreAboutImage"
+              src="/images/aboutus/Layer 3.jpg"
+              alt="Group of people in a meeting"
+            />
+          </figure>
+          <h2 class="main__moreAboutItemTitle">Our People</h2>
+          <p class="main__moreAboutDescription">
+            Adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, montes
+            magna. Augue et pulvinar proin dapibus! Urna nec, pid purus, augue
+            velit. Nunc, eu lorem et! Augue hac, diam phasellus, augue turpis
+            velit, ac? Augue sagittis dignissim vut.
+          </p>
+        </div>
+        <div class="main__moreAboutItem">
+          <figure class="main__moreAboutFigure">
+            <img
+              class="main__moreAboutImage"
+              src="/images/aboutus/Layer 1.jpg"
+              alt="Man with floating tech objects"
+            />
+          </figure>
+          <h2 class="main__moreAboutItemTitle">Our Payoff</h2>
+          <p class="main__moreAboutDescription">
+            Elit! Sed, cursus, in nunc adipiscing phasellus in turpis etiam!
+            Nec, placerat! Tortor, et et vel, nunc? Proin quis tincidunt
+            scelerisque porttitor? Dapibus! Urna nec, pid purus, augue velit.
+            Nunc, eu lorem et! Augue hac, diam phasellus, augue turpis velit,
+            ac? Augue sagittis dignissim vut.
+          </p>
+        </div>
+      </section>
+      <section class="main__threeArticles flexed maxWidth">
+        <div class="main__threeArticles flexed">
+          <div class="main__threeArticlesItem">
+            <figure class="main__threeArticlesFigure">
+              <img
+                class="main__threeArticlesImage"
+                src="/images/techphotos/Layer 6.jpg"
+                alt="Abstract graphic of yellow columns"
+              />
+            </figure>
+            <h2 class="main__threeArticlesTitle">Infrastructure</h2>
+            <p class="main__threeArticlesDescription">
+              Urna pid? Cras, eros risus mattis ridiculus tortor eu rhoncus
+              porta lundium rhoncus massa porttitor, amet diam sociis dictumst
+              elementum mid pulvinar. Lectus odio, nec turpis, et sagittis amet
+              amet!
+            </p>
+          </div>
+          <div class="main__threeArticlesItem">
+            <figure class="main__threeArticlesFigure">
+              <img
+                class="main__threeArticlesImage"
+                src="/images/techphotos/Layer 7.jpg"
+                alt="Image graphic with text 'CMS Technology'"
+              />
+            </figure>
+            <h2 class="main__threeArticlesTitle">Technology</h2>
+            <p class="main__threeArticlesDescription">
+              elementum mid pulvinar. Lectus odio, nec turpis, et sagittis amet
+              amet Urna pid? Cras, eros risus mattis ridiculus tortor eu rhoncus
+              porta lundium rhoncus massa porttitor, amet diam sociis dictumst !
+            </p>
+          </div>
+          <div class="main__threeArticlesItem">
+            <h2 class="main__threeArticlesTitle">
+              Live 24/7 Technical Support
+            </h2>
+            <p class="main__threeArticlesDescription">
+              placerat dignissim lorem eu duis, quis aenean! Sagittis ridiculus
+              aenean cras eu a, augue, sed sed rhoncus dictumst a? Scelerisque.
+              Dapibus in etiam, natoque porta nunc in. Hac duis, et et,
+              tincidunt lorem et. Amet sed aliquam egestas etiam, nec. Aliquet,
+              quis enim, quis, in odio rhoncus, parturient pid risus nunc,
+              lundium dapibus odio. Aenean eu pid sociis risus! Pellentesque
+              montes elementum eros! Integer magna.
+            </p>
+          </div>
+        </div>
+        <div class="main__pricingDiv">
+          <figure class="main__pricingFigure">
+            <img
+              class="main__pricingImage"
+              src="/images/techphotos/Grapg.jpg"
+              alt="Graphic of red bar graph with upward arrow"
+            />
+          </figure>
+          <button class="main__seePricingButton">SEE PRICING</button>
+          <p class="main__pricingFootnote">Company Growth 2012-2016</p>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="hannahInfo">
-            <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
-        </div>
-        <div class="imageCiting">
-        </div>
+      <section class="footer__companyLogos flexed">
+        <img
+          class="footer__companyLogo"
+          src="/images/company/Layer 8.jpg"
+          alt="CVS Health"
+        />
+        <img
+          class="footer__companyLogo"
+          src="/images/company/Layer 9.jpg"
+          alt="Walmart"
+        />
+        <img
+          class="footer__companyLogo"
+          src="/images/company/Layer 10.jpg"
+          alt="McKesson"
+        />
+        <img
+          class="footer__companyLogo"
+          src="/images/company/Layer 11.jpg"
+          alt="Exxon Mobile"
+        />
+        <img
+          class="footer__companyLogo"
+          src="/images/company/Layer 12.jpg"
+          alt="Birkshire Hathway"
+        />
+        <img
+          class="footer__companyLogo"
+          src="/images/company/Layer 13.jpg"
+          alt="Ford"
+        />
+      </section>
+      <section class="footer__phoneNumberWrapper">
+        <h3 class="footer__phoneNumber maxWidth">Call at 1-800-555-1234</h3>
+      </section>
     </footer>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
