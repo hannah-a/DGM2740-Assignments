@@ -3,7 +3,6 @@
     $w: ($i / 12) * 100%;
     .medium-#{$i} {
         flex-basis: $w;
-        column-gap: 20px;
     }
 }
 .header {
@@ -15,4 +14,11 @@
 .nav__mainUl {
     width: 100%;
     justify-content: flex-end;
+}
+.main__successSection {
+    padding: 1rem;
+    flex-wrap: nowrap; //no wrap on medium screens
+}
+.main__threeArticlesPriceFlex {
+    flex-wrap: nowrap;
 }

@@ -3,9 +3,11 @@
     $w: ($i / 12) * 100%;
     .large-#{$i} {
         flex-basis: $w;
-        column-gap: 20px;
     }
 }
 .header {
     padding: 1rem 0 0 0; //takes off left side padding on desktop
+}
+.main__successSection {
+    padding: 1rem 0; //gets rid of side padding
 }

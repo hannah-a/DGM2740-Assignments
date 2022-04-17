@@ -14,7 +14,6 @@
   $w: ($i / 12) * 100%;
   .small-#{$i} {
     flex-basis: $w;
-    column-gap: 10px;
   }
 }
 
@@ -68,6 +67,8 @@ html {
 .nav__mainListItems {
   padding: 0 0.4rem;
   font-weight: 400;
+  font-size: .8rem;
+  color: grey;
 }
 
 //Hero Image
@@ -83,6 +84,7 @@ html {
 
 //Success Black Section
 .main__successWrapperSection {
+    
     margin-top: .6rem;
 
     background-color: black;
@@ -92,7 +94,7 @@ html {
 }
 .main__yellowTitle {
     font-size: 1.5rem;
-    color: rgb(255, 234, 0);
+    color: #fcd831;
 }
 .main__expectBestDescription {
     padding-top: .4rem;
@@ -115,13 +117,49 @@ html {
 .main__successTitle {
     padding: .8rem 0;
 
-    color: rgb(255, 234, 0);
+    color: #fcd831;
     font-style: italic;
     font-size: 1.8rem;
 }
 
 
-//MORE ABOUT US Section
+//MORE ABOUT US Sections
 .main__moreAboutTitle {
+    padding: 2rem 1rem .4rem 1rem;
+
+    font-size: 1.6rem;
+    color: #0480b1;
+}
+.main__glowWrapper {
+    background-image: url(/images/Glow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main__linePicture  {
+    padding: 0 1rem;
+    width: 100%;
+}
+.main__moreAboutItem {
+    padding: 1rem;
+}
+.main__moreAboutImage {
+    width: 100%;
+    height: auto;
+}
+.main__moreAboutItemTitle {
+    padding-top: 1rem;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #0480b1;
+}
+.main__moreAboutDescription {
+    color: grey;
+    line-height: 1rem;
+    font-size: .6rem;
+}
+
+//Technology and Button Section
+.main__threeArticlesPriceFlex {
     
 }
