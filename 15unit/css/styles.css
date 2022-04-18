@@ -458,6 +458,10 @@ html {
   letter-spacing: 2%;
 }
 
+.main__seePricingButton:hover {
+  background-color: black;
+}
+
 .main__pricingFootnote {
   padding: 0.6rem 0;
   text-align: center;
@@ -499,8 +503,8 @@ html {
   height: 50px;
   margin-bottom: 3rem;
   background: black;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(67%, #0480b1));
-  background: linear-gradient(0deg, black 0%, #0480b1 67%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(5, 6, 21, 0.87)), color-stop(67%, #0480b1));
+  background: linear-gradient(0deg, rgba(5, 6, 21, 0.87) 0%, #0480b1 67%);
 }
 
 .footer__phoneNumber {
@@ -570,15 +574,22 @@ html {
   }
   .nav {
     padding: 0.4rem;
+    height: auto;
   }
   .nav__mainUl {
-    width: 100%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    padding: 0;
   }
   .nav__buttonHamburger {
     display: none;
@@ -588,12 +599,26 @@ html {
   }
   .nav__icon {
     padding-right: 0.2rem;
+    display: block;
   }
   .nav__mainListItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 0.4rem;
+    width: auto;
     font-weight: 400;
     font-size: .8rem;
     color: grey;
+    text-align: unset;
+  }
+  .nav__mainListItems:hover {
+    cursor: pointer;
+    color: #0480b1;
+    background-color: white;
   }
   .main__successSection {
     padding: 1rem;

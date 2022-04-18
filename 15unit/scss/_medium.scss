@@ -15,11 +15,16 @@
 
 .nav {
     padding: 0.4rem;
+    height: auto;
 }
 .nav__mainUl {
-    width: 100%;
-    justify-content: flex-end;
+    position: static;
     display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+    width: 100%;
+    padding: 0;
 }
 .nav__buttonHamburger {
     display: none;
@@ -29,13 +34,26 @@
 }
 .nav__icon {
     padding-right: 0.2rem;
+    display: block;
 }
 .nav__mainListItems {
+    display: flex;
+    align-items: center;
+
     padding: 0 0.4rem;
+    width: auto;
+
     font-weight: 400;
     font-size: .8rem;
     color: grey;
+    text-align: unset;
 }
+.nav__mainListItems:hover {
+    cursor: pointer;
+    color: #0480b1;
+    background-color: rgb(255, 255, 255);
+}
+
 .main__successSection {
     padding: 1rem;
     flex-wrap: nowrap; //no wrap on medium screens
