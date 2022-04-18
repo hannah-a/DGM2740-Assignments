@@ -18,6 +18,7 @@ html {
 
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+    margin: auto;
 }
 
 .header {
@@ -31,24 +32,32 @@ html {
     font-size: 3rem;
     color: white;
 }
+.main {
+    margin: auto;
+}
 
 #main__weatherDiv {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
+    object-fit: cover;
 
-    margin: 4rem;
+    max-width: 70rem;
+    margin: auto;
 }
 
 .main__weatherItem {
     margin: 2rem;
     padding: 2rem;
+    object-fit: cover;
+
 
     background-color: darken($backgroundColor, 50%);
     border-radius: 20px;
 
     color: white;
+    max-width: 100%;
 }
 .main__weatherTitle {
     padding-bottom: 1rem;
