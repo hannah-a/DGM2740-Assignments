@@ -268,12 +268,12 @@ html {
 
 .nav__buttonHamburger:hover {
   cursor: pointer;
-  color: #0480b1;
+  color: #01415a;
 }
 
 .nav__buttonX {
   cursor: pointer;
-  color: #0480b1;
+  color: #01415a;
 }
 
 .nav__mainUl.open__ul {
@@ -299,7 +299,7 @@ html {
 
 .nav__mainListItems:hover {
   cursor: pointer;
-  color: #0480b1;
+  color: #01415a;
   background-color: white;
 }
 
@@ -360,7 +360,7 @@ html {
   padding: 2rem 1rem 0.1rem 1rem;
   font-size: 1.6rem;
   font-weight: 400;
-  color: #0480b1;
+  color: #01415a;
 }
 
 .main__glowWrapper {
@@ -388,11 +388,11 @@ html {
   padding-bottom: 0.4rem;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #0480b1;
+  color: #01415a;
 }
 
 .main__moreAboutDescription {
-  color: grey;
+  color: #252525;
   line-height: 1rem;
   font-size: 0.6rem;
 }
@@ -426,11 +426,11 @@ html {
   padding-bottom: 0.4rem;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #0480b1;
+  color: #01415a;
 }
 
 .main__threeArticlesDescription {
-  color: grey;
+  color: #252525;
   line-height: 1rem;
   font-size: 0.8rem;
 }
@@ -450,7 +450,7 @@ html {
   padding: 0.2rem 1rem;
   width: 70%;
   margin: auto;
-  background-color: #0480b1;
+  background-color: #01415a;
   border-style: none;
   border-radius: 20px;
   color: white;
@@ -464,7 +464,7 @@ html {
 .main__pricingFootnote {
   padding: 0.6rem 0;
   text-align: center;
-  color: grey;
+  color: #252525;
   font-size: 0.8rem;
 }
 
