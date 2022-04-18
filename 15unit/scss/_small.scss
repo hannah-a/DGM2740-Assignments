@@ -96,11 +96,11 @@ html {
 }
 .nav__buttonHamburger:hover {
   cursor: pointer;
-  color: #0480b1;
+  color: $blueColor;
 }
 .nav__buttonX {
   cursor: pointer;
-  color: #0480b1;
+  color: $blueColor;
 }
 
 .nav__mainUl.open__ul {
@@ -124,7 +124,7 @@ html {
 }
 .nav__mainListItems:hover {
   cursor: pointer;
-  color: #0480b1;
+  color: $blueColor;
   background-color: rgb(255, 255, 255);
 }
 //Hero Image
@@ -184,7 +184,7 @@ html {
 
   font-size: 1.6rem;
   font-weight: 400;
-  color: #0480b1;
+  color: $blueColor;
 }
 .main__glowWrapper {
   background-image: url('/15unit/images/glow.png');
@@ -208,7 +208,7 @@ html {
 
   font-size: 1.2rem;
   font-weight: 400;
-  color: #0480b1;
+  color: $blueColor;
 }
 .main__moreAboutDescription {
   color: grey;
@@ -243,7 +243,7 @@ html {
 
   font-size: 1.2rem;
   font-weight: 400;
-  color: #0480b1;
+  color: $blueColor;
 }
 .main__threeArticlesDescription {
   color: grey;
@@ -262,13 +262,12 @@ html {
   width: 70%;
   margin: auto;
 
-  background-color: #0480b1;
+  background-color: $blueColor;
   border-style: none;
   border-radius: 20px;
 
   color: white;
   font-size: 1.4rem;
-  letter-spacing: 2%;
 }
 .main__seePricingButton:hover {
     background-color: black;
