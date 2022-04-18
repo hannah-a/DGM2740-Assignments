@@ -106,8 +106,7 @@ html {
 .nav__mainUl.open__ul {
   display: flex;
 }
-.nav__hamburgerOpen {
-}
+
 
 .nav__icon {
   padding-right: 0.2rem;
@@ -188,7 +187,7 @@ html {
   color: #0480b1;
 }
 .main__glowWrapper {
-  background-image: url(/images/Glow.png);
+  background-image: url('/15unit/images/Glow.png');
   background-repeat: no-repeat;
   background-size: contain;
 }

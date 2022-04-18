@@ -364,7 +364,7 @@ html {
 }
 
 .main__glowWrapper {
-  background-image: url(/images/Glow.png);
+  background-image: url("/15unit/images/Glow.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
