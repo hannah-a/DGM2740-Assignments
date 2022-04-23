@@ -50,6 +50,7 @@ nav {
     }
 }
 .ul {
+    display: none;
     position: absolute;
     z-index: 1;
 
@@ -60,9 +61,17 @@ nav {
     border-radius: 0 0 10px 10px;
     border-left: 5px solid $sliderHighlight;
 }
+.ul:hover {
+    display: block;
+}
+
 
 .ul__exploreUl { //Sub navigation menu
     margin-top: .5rem;
+    display: none;
+}
+.explore--open {
+    display: block;
 }
 
 //Main navigation
@@ -104,15 +113,12 @@ nav {
 }
 
 //Menu closed classes
-.ul--closed {
-    display: none;
+.ul--open {
+    display: block;
     transition: all ease-in-out 1s;
 }
   
-.ul__exploreUl--closed {
-    display: none;
-    transition: all ease-in-out 1s;
-}
+
 
 
 

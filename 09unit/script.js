@@ -4,14 +4,17 @@ const hamburgerButton = document.querySelector('.nav__button')
 
 //References to sub navigation
 const ulexplore = document.querySelector('.ul__exploreUl')
-const exploreButton = document.querySelector('.ul__exploreIcon')
+const exploreButton = document.querySelector('.ul__exploreLi')
 
 //Main nav expanding
-hamburgerButton.addEventListener('click', () => {
-    ul.classList.toggle('ul--closed')
+hamburgerButton.addEventListener('click', (e) => {
+    ul.classList.toggle('ul--open')
+    e.stopProgation()
 })
 
 //Sub nav expanding
-exploreButton.addEventListener('click', ()=> {
-    ulexplore.classList.toggle('ul__exploreUl--closed')
+
+exploreButton.addEventListener('click', (e) => {
+    ulexplore.classList.toggle('explore--open')
+    e.stopProgation()
 })

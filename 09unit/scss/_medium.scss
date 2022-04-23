@@ -18,7 +18,9 @@
     padding: .5rem;
     border: none;
 }
-
+.ul:hover {
+    display: flex;
+}
 .ul__exploreUl {
     position: relative;
     z-index: 2;
