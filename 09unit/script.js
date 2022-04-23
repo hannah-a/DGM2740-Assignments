@@ -14,7 +14,11 @@ hamburgerButton.addEventListener('click', (e) => {
 
 //Sub nav expanding
 
-exploreButton.addEventListener('click', (e) => {
-    ulexplore.classList.toggle('explore--open')
+exploreButton.addEventListener('mouseover', (e) => {
+    ulexplore.classList.add('explore--open')
+    e.stopProgation()
+})
+exploreButton.addEventListener('mouseout', (e) => {
+    ulexplore.classList.remove('explore--open')
     e.stopProgation()
 })
