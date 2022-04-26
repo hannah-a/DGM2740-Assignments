@@ -1,2 +1,493 @@
-@import url(c:\Users\Hannah Armstrong\OneDrive - Utah Valley University\UVU\Spring 2022\DGM 2740 Principles of Web Design\DGM2740\09unit\slick\slick-theme.css);@import url(c:\Users\Hannah Armstrong\OneDrive - Utah Valley University\UVU\Spring 2022\DGM 2740 Principles of Web Design\DGM2740\09unit\slick\slick.css);html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0}input,select{vertical-align:middle}*{-webkit-box-sizing:border-box;box-sizing:border-box}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-family:'Spinnaker', sans-serif}.body{font-family:'Spinnaker', sans-serif}.header,.nav,.main,.footer{max-width:64rem;margin:0 auto}.header{padding:1rem 0 1rem 1.5rem;height:clamp(25vw, 30vw, 20vw);background-image:url(/09unit/images/headerbackground.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;color:#000;-webkit-clip-path:polygon(0 93%, 12% 84%, 24% 81%, 39% 82%, 49% 88%, 62% 95%, 76% 95%, 90% 95%, 100% 91%, 100% 1%, 0 0);clip-path:polygon(0 93%, 12% 84%, 24% 81%, 39% 82%, 49% 88%, 62% 95%, 76% 95%, 90% 95%, 100% 91%, 100% 1%, 0 0);font-family:'Alegreya Sans SC', sans-serif}.header .header__company{font-size:2rem}.header .header__slogan{font-size:.8rem}nav .nav__hamburger{padding:.5rem 0 .8rem 1rem;font-size:2rem}.ul{display:none;position:absolute;z-index:1;padding:0 4rem 1rem 1rem;background-color:white;border-radius:0 0 10px 10px;border-left:5px solid #1c0222}.ul:hover{display:block}.ul__exploreUl{margin-top:.5rem;display:none}.explore--open{display:block}.ul__li{padding:.5rem 0}.ul__anchor{text-decoration:none;color:black}.ul__anchor:hover{color:#1c0222;font-weight:800}.ul__exploreIcon{padding:.5rem;font-size:1.5rem}.ul__exploreList{padding-bottom:.5rem}.ul__subanchor{padding:1rem;font-size:.8rem;text-decoration:none;color:black}.ul__subanchor:hover{color:#1c0222;font-weight:800}.ul--open{display:block;-webkit-transition:all ease-in-out 1s;transition:all ease-in-out 1s}.picture{position:relative}.picture__descDiv{position:absolute;bottom:4rem;max-width:80vw;padding:2rem 5rem 2rem 1rem;border-radius:0 60px 60px 0;border-left:10px solid #1c0222;font-weight:600;letter-spacing:.05rem;line-height:1.5rem;color:#fff;background-color:rgba(0,0,0,0.918)}.main__pagetitle{margin:3rem 0 1rem 1rem}.main__cards{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.main__card{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;background-repeat:no-repeat;background-size:cover;background-position:bottom center}.main__cardAnchor{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;height:30vh;color:white;text-align:center;text-decoration:none;-webkit-transition:all .5s ease-in;transition:all .5s ease-in}.main__cardIcon{width:80px;height:80px;font-size:4rem}.main__card:nth-child(1){background-image:url("/09unit/images/squareacornstreet/mediumsquare.jpg")}.main__card:nth-child(2){background-image:url("/09unit/images/squareheli/mediumsquare.jpg")}.main__card:nth-child(3){background-image:url("/09unit/images/squarehotel/mediumsquare.jpg")}.main__card:nth-child(4){background-image:url("/09unit/images/squarelibrary/mediumsquare.jpg")}.main__card:nth-child(1) a{background-color:#bb0de3}.main__card:nth-child(2) a{background-color:#930bb3}.main__card:nth-child(3) a{background-color:#6b0882}.main__card:nth-child(4) a{background-color:#440552}.main__card .main__cardAnchor:hover{background:none;text-shadow:0 0 4px black}.footer{padding:2rem 0;text-align:center}.footer__copyright{font-weight:bold;font-size:.8rem;text-align:center}.footer__imgCiting{margin-top:2rem;padding:1.5rem;background-color:#d6bbdd;border-bottom:10px solid #1c0222;font-size:.8rem}@media only screen and (min-width: 35rem){.header{padding:4rem 0 1rem 1.5rem;height:40vw}.header .header__company{font-size:4rem}.header .header__slogan{font-size:1rem}.ul{display:-webkit-box;display:-ms-flexbox;display:flex;position:unset;padding:.5rem;border:none}.ul:hover{display:-webkit-box;display:-ms-flexbox;display:flex}.ul__li{position:relative}.ul__exploreUl{position:absolute;z-index:2;background-color:white}.ul__exploreLi{position:relative;bottom:16px}.ul__li{padding:0 1rem}.ul--closed{display:-webkit-box;display:-ms-flexbox;display:flex}.ul__exploreIcon{width:10px;height:10px}.nav__hamburger{display:none}.ul--closed{display:block}.ul__explore--closed{display:block}.picture{position:relative}.picture__descDiv{position:absolute;bottom:40%;padding:2rem 5rem 2rem 1rem;border-radius:0 60px 60px 0;border-left:10px solid #1c0222;font-weight:600;letter-spacing:.05rem;color:#fff;background-color:rgba(0,0,0,0.918)}.main__pagetitle{font-size:1.4rem}.main__cardAnchor{width:100%;height:30vh;-webkit-transition:all .5s ease-in;transition:all .5s ease-in}.main__card{-ms-flex-preferred-size:50%;flex-basis:50%}}@media only screen and (min-width: 64rem){.header{padding:4rem 0 1rem 1.5rem;height:30vw}.header .header__company{font-size:4rem}.header .header__slogan{font-size:1rem}.main__pagetitle{font-size:1.8rem}.main__card{-ms-flex-preferred-size:25%;flex-basis:25%}}
+@import url(../slick/slick-theme.css);
+@import url(../slick/slick.css);
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+/* line 9, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 30, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 39, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 43, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 47, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 53, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+/* line 62, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 69, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 76, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 80, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 85, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+/* line 91, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 100, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_normalize.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 4, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: 'Spinnaker', sans-serif;
+}
+
+/* line 15, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.body {
+  font-family: 'Spinnaker', sans-serif;
+}
+
+/* line 19, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.header, .nav, .main, .footer {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+/* line 24, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.header {
+  padding: 1rem 0 1rem 1.5rem;
+  height: clamp(25vw, 30vw, 20vw);
+  background-image: url(/09unit/images/headerbackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: black;
+  clip-path: polygon(0 93%, 12% 84%, 24% 81%, 39% 82%, 49% 88%, 62% 95%, 76% 95%, 90% 95%, 100% 91%, 100% 1%, 0 0);
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+/* line 36, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.header .header__company {
+  font-size: 2rem;
+}
+
+/* line 39, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.header .header__slogan {
+  font-size: .8rem;
+}
+
+/* line 46, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+nav .nav__hamburger {
+  padding: .5rem 0 .8rem 1rem;
+  font-size: 2rem;
+}
+
+/* line 52, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 0 4rem 1rem 1rem;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  border-left: 5px solid #1c0222;
+}
+
+/* line 64, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul:hover {
+  display: block;
+}
+
+/* line 69, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul__exploreUl {
+  margin-top: .5rem;
+  display: none;
+}
+
+/* line 73, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.explore--open {
+  display: block;
+}
+
+/* line 78, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul__li {
+  padding: .5rem 0;
+}
+
+/* line 83, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul__anchor {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 88, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul__anchor:hover {
+  color: #1c0222;
+  font-weight: 800;
+}
+
+/* line 94, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul__exploreIcon {
+  padding: .5rem;
+  font-size: 1.5rem;
+}
+
+/* line 100, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul__exploreList {
+  padding-bottom: .5rem;
+}
+
+/* line 103, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul__subanchor {
+  padding: 1rem;
+  font-size: .8rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 110, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul__subanchor:hover {
+  color: #1c0222;
+  font-weight: 800;
+}
+
+/* line 116, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.ul--open {
+  display: block;
+  transition: all ease-in-out 1s;
+}
+
+/* line 128, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.picture {
+  position: relative;
+}
+
+/* line 129, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.picture__descDiv {
+  position: absolute;
+  bottom: 4rem;
+  max-width: 80vw;
+  padding: 2rem 5rem 2rem 1rem;
+  border-radius: 0 60px 60px 0;
+  border-left: 10px solid #1c0222;
+  font-weight: 600;
+  letter-spacing: .05rem;
+  line-height: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.918);
+}
+
+/* line 150, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__pagetitle {
+  margin: 3rem 0 1rem 1rem;
+}
+
+/* line 153, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 159, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card {
+  width: 100%;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+/* line 169, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__cardAnchor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: all .5s ease-in;
+}
+
+/* line 185, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__cardIcon {
+  width: 80px;
+  height: 80px;
+  font-size: 4rem;
+}
+
+/* line 193, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card:nth-child(1) {
+  background-image: url("/09unit/images/squareacornstreet/mediumsquare.jpg");
+}
+
+/* line 196, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card:nth-child(2) {
+  background-image: url("/09unit/images/squareheli/mediumsquare.jpg");
+}
+
+/* line 199, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card:nth-child(3) {
+  background-image: url("/09unit/images/squarehotel/mediumsquare.jpg");
+}
+
+/* line 202, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card:nth-child(4) {
+  background-image: url("/09unit/images/squarelibrary/mediumsquare.jpg");
+}
+
+/* line 209, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card:nth-child(1) a {
+  background-color: #bb0de3;
+}
+
+/* line 212, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card:nth-child(2) a {
+  background-color: #930bb3;
+}
+
+/* line 215, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card:nth-child(3) a {
+  background-color: #6b0882;
+}
+
+/* line 218, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card:nth-child(4) a {
+  background-color: #440552;
+}
+
+/* line 222, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.main__card .main__cardAnchor:hover {
+  background: none;
+  text-shadow: 0 0 4px black;
+}
+
+/* line 228, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* line 232, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.footer__copyright {
+  font-weight: bold;
+  font-size: .8rem;
+  text-align: center;
+}
+
+/* line 237, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_small.scss */
+.footer__imgCiting {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #d6bbdd;
+  border-bottom: 10px solid #1c0222;
+  font-size: .8rem;
+}
+
+@media only screen and (min-width: 35rem) {
+  /* line 1, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .header {
+    padding: 4rem 0 1rem 1.5rem;
+    height: 40vw;
+  }
+  /* line 7, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .header .header__company {
+    font-size: 4rem;
+  }
+  /* line 10, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .header .header__slogan {
+    font-size: 1rem;
+  }
+  /* line 15, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .ul {
+    display: flex;
+    position: unset;
+    padding: .5rem;
+    border: none;
+  }
+  /* line 21, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .ul:hover {
+    display: flex;
+  }
+  /* line 24, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .ul__exploreUl {
+    position: relative;
+    z-index: 2;
+  }
+  /* line 28, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .ul__exploreLi {
+    position: relative;
+    bottom: 16px;
+  }
+  /* line 32, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .ul__li {
+    padding: 0 1rem;
+  }
+  /* line 35, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .ul--closed {
+    display: flex;
+  }
+  /* line 38, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .ul__exploreIcon {
+    width: 10px;
+    height: 10px;
+  }
+  /* line 42, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .nav__hamburger {
+    display: none;
+  }
+  /* line 45, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .ul--closed {
+    display: block;
+  }
+  /* line 48, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .ul__explore--closed {
+    display: block;
+  }
+  /* line 53, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .picture {
+    position: relative;
+  }
+  /* line 55, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .picture__descDiv {
+    position: absolute;
+    bottom: 40%;
+    padding: 2rem 5rem 2rem 1rem;
+    border-radius: 0 60px 60px 0;
+    border-left: 10px solid #1c0222;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.918);
+  }
+  /* line 70, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .main__pagetitle {
+    font-size: 1.4rem;
+  }
+  /* line 73, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .main__cardAnchor {
+    width: 100%;
+    height: 30vh;
+    transition: all .5s ease-in;
+  }
+  /* line 78, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_medium.scss */
+  .main__card {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  /* line 1, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_large.scss */
+  .header {
+    padding: 4rem 0 1rem 1.5rem;
+    height: 30vw;
+  }
+  /* line 7, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_large.scss */
+  .header .header__company {
+    font-size: 4rem;
+  }
+  /* line 10, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_large.scss */
+  .header .header__slogan {
+    font-size: 1rem;
+  }
+  /* line 15, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_large.scss */
+  .main__pagetitle {
+    font-size: 1.8rem;
+  }
+  /* line 18, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2740 Principles of Web Design/DGM2740/09unit/scss/_large.scss */
+  .main__card {
+    flex-basis: 25%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
