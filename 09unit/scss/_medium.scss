@@ -21,9 +21,13 @@
 .ul:hover {
     display: flex;
 }
-.ul__exploreUl {
+.ul__li {
     position: relative;
+}
+.ul__exploreUl {
+    position: absolute;
     z-index: 2;
+    background-color: white;
 }
 .ul__exploreLi { //Moving the explore button up
     position: relative;
